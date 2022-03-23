@@ -1,8 +1,30 @@
-@mixin flex() {
+@mixin container() {
+    width: 100%;
+    max-width: 1280px;
+    padding: 80px 40px 100px;
+    margin: 0 auto;
+}
+
+@mixin flex($align: space-between) {
     display: flex;
-    justify-content: space-between;
+    justify-content: $align;
     align-items: center;
     flex-wrap: wrap;
+}
+
+@mixin btn() {
+    width: 207px;
+    height: 52px;
+    background-color: $color-primary;
+    color: $color-dark-3xl;
+    font-family: $font-add;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    @include flex(center);
 }
 
 $font-main: "Arial", sans-serif;
@@ -19,6 +41,7 @@ $color-dark-xl: #4c4c4c;
 $color-dark-3xl: #292929;
 
 $bg-color: #211f20;
+$background-dark: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), $bg-color;
 
 html {
     scroll-behavior: smooth;
@@ -39,23 +62,20 @@ body {
     font-weight: normal;
     font-size: 15px;
     line-height: 160%;
+    color: $color-dark-s;
 }
 
 .header {
     width: 100%;
-    background: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), $bg-color;
-}
+    background: $background-dark;
 
-.container {
-    width: 100%;
-    max-width: 1280px;
-    padding: 80px 40px 100px;
-    margin: 0 auto;
-}
+    // .header__container
 
-.container--header {
-    padding: 60px 40px 0;
-    @include flex();
+    &__container {
+        @include container();
+        @include flex();
+        padding: 60px 40px 0;
+    }
 }
 
 .logo {
@@ -64,8 +84,7 @@ body {
     &__title {
         color: $color-primary;
         font-family: $font-add;
-        margin: 0;
-        margin-bottom: 10px;
+        margin: 0 0 10px;
         padding: 0;
         font-size: 32px;
         line-height: 110%;
@@ -82,12 +101,6 @@ body {
     }
 }
 
-.nav {
-    // .nav__menu
-
-    &__menu {
-    }
-}
 .menu {
     margin: 0;
     padding: 0;
@@ -127,5 +140,53 @@ body {
     &__link {
         text-decoration: none;
         color: $color-dark-s;
+    }
+}
+
+.start-screen {
+    width: 100%;
+    background: $background-dark;
+    margin-top: -120px;
+    padding-top: 120px;
+    // .start-screen__container
+
+    &__container {
+        @include container();
+        @include flex();
+        padding: 60px 40px 0;
+    }
+
+    // .start-screen__content
+
+    &__content {
+        max-width: 460px;
+    }
+
+    // .start-screen__title
+
+    &__title {
+        font-family: $font-add;
+        font-size: 44px;
+        line-height: 130%;
+        color: $color-light-xl;
+        margin: 0 0 42px;
+    }
+
+    // .start-screen__text
+
+    &__text {
+        margin: 0 0 42px;
+    }
+
+    // .start-screen__button
+
+    &__button {
+        @include btn();
+    }
+
+    // .start-screen__img
+
+    &__img {
+       
     }
 }

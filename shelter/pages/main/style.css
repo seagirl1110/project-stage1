@@ -17,33 +17,29 @@ body {
   font-weight: normal;
   font-size: 15px;
   line-height: 160%;
+  color: #cdcdcd;
 }
 
 .header {
   width: 100%;
   background: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
 }
-
-.container {
+.header__container {
   width: 100%;
   max-width: 1280px;
   padding: 80px 40px 100px;
   margin: 0 auto;
-}
-
-.container--header {
-  padding: 60px 40px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  padding: 60px 40px 0;
 }
 
 .logo__title {
   color: #f1cdb3;
   font-family: "Georgia", serif;
-  margin: 0;
-  margin-bottom: 10px;
+  margin: 0 0 10px;
   padding: 0;
   font-size: 32px;
   line-height: 110%;
@@ -80,6 +76,54 @@ body {
 .menu__link {
   text-decoration: none;
   color: #cdcdcd;
+}
+
+.start-block {
+  width: 100%;
+  background: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
+  margin-top: -120px;
+  padding-top: 120px;
+}
+.start-block__container {
+  width: 100%;
+  max-width: 1280px;
+  padding: 80px 40px 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 60px 40px 0;
+}
+.start-block__content {
+  max-width: 460px;
+}
+.start-block__title {
+  font-family: "Georgia", serif;
+  font-size: 44px;
+  line-height: 130%;
+  color: #ffffff;
+  margin: 0 0 42px;
+}
+.start-block__text {
+  margin: 0 0 42px;
+}
+.start-block__button {
+  width: 207px;
+  height: 52px;
+  background-color: #f1cdb3;
+  color: #292929;
+  font-family: "Georgia", serif;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  border: none;
+  outline: none;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=style.css.map */
