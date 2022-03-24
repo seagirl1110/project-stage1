@@ -24,13 +24,28 @@
     border: none;
     outline: none;
     border-radius: 100px;
+    cursor: pointer;
     @include flex(center);
+
+    &:hover {
+        background-color: $color-primary-light;
+    }
+}
+
+@mixin section-title() {
+    font-family: $font-add;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: $color-dark-l;
+    margin: 0;
 }
 
 $font-main: "Arial", sans-serif;
 $font-add: "Georgia", serif;
 
 $color-primary: #f1cdb3;
+$color-primary-light: #fddcc4;
 $color-light-s: #fafafa;
 $color-light-l: #f6f6f6;
 $color-light-xl: #ffffff;
@@ -40,8 +55,8 @@ $color-dark-l: #545454;
 $color-dark-xl: #4c4c4c;
 $color-dark-3xl: #292929;
 
-$bg-color: #211f20;
-$background-dark: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), $bg-color;
+$bg-color-dark: url("../../assets/images/bg-noise-transparent.png"),
+    radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
 
 html {
     scroll-behavior: smooth;
@@ -67,7 +82,7 @@ body {
 
 .header {
     width: 100%;
-    background: $background-dark;
+    background: $bg-color-dark;
 
     // .header__container
 
@@ -145,9 +160,10 @@ body {
 
 .start-screen {
     width: 100%;
-    background: $background-dark;
+    background: $bg-color-dark;
     margin-top: -120px;
     padding-top: 120px;
+
     // .start-screen__container
 
     &__container {
@@ -187,6 +203,41 @@ body {
     // .start-screen__img
 
     &__img {
-       
+    }
+}
+
+.about {
+    background-color: $color-light-xl;
+
+    // .about__container
+
+    &__container {
+        @include container();
+        @include flex(center);
+    }
+
+    // .about__img
+
+    &__img {
+    }
+
+    // .about__content
+
+    &__content {
+        margin-left: 120px;
+        max-width: 430px;
+    }
+
+    // .about__title
+
+    &__title {
+        @include section-title();
+    }
+
+    // .about__text
+
+    &__text {
+        margin: 25px 0 0;
+        color: $color-dark-xl;
     }
 }

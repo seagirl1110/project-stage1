@@ -22,7 +22,7 @@ body {
 
 .header {
   width: 100%;
-  background: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
+  background: url("../../assets/images/bg-noise-transparent.png"), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
 }
 .header__container {
   width: 100%;
@@ -78,13 +78,13 @@ body {
   color: #cdcdcd;
 }
 
-.start-block {
+.start-screen {
   width: 100%;
-  background: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
+  background: url("../../assets/images/bg-noise-transparent.png"), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
   margin-top: -120px;
   padding-top: 120px;
 }
-.start-block__container {
+.start-screen__container {
   width: 100%;
   max-width: 1280px;
   padding: 80px 40px 100px;
@@ -95,20 +95,20 @@ body {
   flex-wrap: wrap;
   padding: 60px 40px 0;
 }
-.start-block__content {
+.start-screen__content {
   max-width: 460px;
 }
-.start-block__title {
+.start-screen__title {
   font-family: "Georgia", serif;
   font-size: 44px;
   line-height: 130%;
   color: #ffffff;
   margin: 0 0 42px;
 }
-.start-block__text {
+.start-screen__text {
   margin: 0 0 42px;
 }
-.start-block__button {
+.start-screen__button {
   width: 207px;
   height: 52px;
   background-color: #f1cdb3;
@@ -120,10 +120,43 @@ body {
   border: none;
   outline: none;
   border-radius: 100px;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+.start-screen__button:hover {
+  background-color: #fddcc4;
+}
+.about {
+  background-color: #ffffff;
+}
+.about__container {
+  width: 100%;
+  max-width: 1280px;
+  padding: 80px 40px 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about__content {
+  margin-left: 120px;
+  max-width: 430px;
+}
+.about__title {
+  font-family: "Georgia", serif;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #545454;
+  margin: 0;
+}
+.about__text {
+  margin: 25px 0 0;
+  color: #4c4c4c;
 }
 
 /*# sourceMappingURL=style.css.map */
