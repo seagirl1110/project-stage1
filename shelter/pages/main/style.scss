@@ -12,8 +12,8 @@
     flex-wrap: wrap;
 }
 
-@mixin btn() {
-    width: 207px;
+@mixin btn($size: 207px) {
+    width: $size;
     height: 52px;
     background-color: $color-primary;
     color: $color-dark-3xl;
@@ -32,13 +32,23 @@
     }
 }
 
-@mixin section-title() {
+@mixin btn-add() {
+    border: 2px solid $color-primary;
+    background-color: transparent;
+
+    &:hover {
+        border: none;
+    }
+}
+
+@mixin section-title($align: left) {
     font-family: $font-add;
     font-size: 35px;
     line-height: 130%;
     letter-spacing: 0.06em;
     color: $color-dark-l;
     margin: 0;
+    text-align: $align;
 }
 
 $font-main: "Arial", sans-serif;
@@ -199,14 +209,10 @@ body {
     &__button {
         @include btn();
     }
-
-    // .start-screen__img
-
-    &__img {
-    }
 }
 
 .about {
+    width: 100%;
     background-color: $color-light-xl;
 
     // .about__container
@@ -214,11 +220,6 @@ body {
     &__container {
         @include container();
         @include flex(center);
-    }
-
-    // .about__img
-
-    &__img {
     }
 
     // .about__content
@@ -239,5 +240,93 @@ body {
     &__text {
         margin: 25px 0 0;
         color: $color-dark-xl;
+    }
+}
+
+.pets {
+    width: 100%;
+    background-color: $color-light-l;
+
+    // .pets__container
+
+    &__container {
+        @include container();
+    }
+
+    // .pets__title
+
+    &__title {
+        @include section-title(center);
+    }
+
+    // .pets__slider
+
+    &__slider {
+        margin: 60px 0;
+    }
+
+    // .pets__btn
+
+    &__btn {
+        @include btn(261px);
+        margin: 0 auto;
+    }
+}
+
+.pets-slider {
+    @include flex();
+
+    // .pets-slider__btn
+
+    &__btn {
+        @include btn(52px);
+        @include btn-add();
+    }
+
+    // .pets-slider__inner
+
+    &__inner {
+        @include flex();
+        gap: 90px;
+    }
+}
+.pets-item {
+    @include flex();
+    flex-direction: column;
+    background-color: $color-light-s;
+    max-width: 270px;
+    border-radius: 9px;
+    padding: 0 0 30px;
+
+    // .pets-item:hover
+
+    &:hover {
+        cursor: pointer;
+        background-color: $color-light-xl;
+    }
+
+    // .pets-item__img
+
+    &__img {
+        display: block;
+        border-radius: 9px 9px 0 0;
+    }
+
+    // .pets-item__title
+
+    &__title {
+        font-family: $font-add;
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 0.06em;
+        color: $color-dark-l;
+        margin: 30px 0;
+    }
+
+    // .pets-item__btn
+
+    &__btn {
+        @include btn(187px);
+        @include btn-add();
     }
 }
