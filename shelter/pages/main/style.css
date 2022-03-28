@@ -269,10 +269,11 @@ body {
 .pets-item__title {
   font-family: "Georgia", serif;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 115%;
   letter-spacing: 0.06em;
   color: #545454;
-  margin: 30px 0;
+  margin: 30px 0 30px;
+  text-align: center;
 }
 .pets-item__btn {
   width: 187px;
@@ -299,6 +300,47 @@ body {
 }
 .pets-item__btn:hover {
   border: none;
+}
+
+.help {
+  width: 100%;
+  background-color: #ffffff;
+}
+.help__container {
+  width: 100%;
+  max-width: 1280px;
+  padding: 80px 40px 100px;
+  margin: 0 auto;
+}
+.help__title {
+  font-family: "Georgia", serif;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #545454;
+  margin: 0;
+  text-align: center;
+}
+.help__list {
+  margin: 60px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 55px 120px;
+}
+
+.help-item {
+  text-align: center;
+}
+.help-item__title {
+  font-family: "Georgia", serif;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #545454;
+  margin: 30px 0 0;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
