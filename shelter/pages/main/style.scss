@@ -43,6 +43,7 @@
 
 @mixin section-title($align: left) {
     font-family: $font-add;
+    font-weight: normal;
     font-size: 35px;
     line-height: 130%;
     letter-spacing: 0.06em;
@@ -53,12 +54,27 @@
 
 @mixin item-title($margin-bottom: 30px) {
     font-family: $font-add;
+    font-weight: normal;
     font-size: 20px;
     line-height: 115%;
     letter-spacing: 0.06em;
     color: $color-dark-l;
     margin: 30px 0 $margin-bottom;
     text-align: center;
+}
+
+@mixin footer-content($image, $padding-left: 60px) {
+    background-image: $image;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    font-family: $font-add;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: $color-primary;
+    display: block;
+    padding-left: $padding-left;
+    min-height: 32px;
 }
 
 $font-main: "Arial", sans-serif;
@@ -406,6 +422,25 @@ body {
         margin: 20px 0;
     }
 
+    // .donation__credit-card
+
+    &__credit-card {
+        background-image: url("../../assets/icons/icon-credit-card.svg");
+        background-repeat: no-repeat;
+        background-position: 15px 10px;
+        padding: 10px 15px 10px 60px;
+        background-color: $color-primary;
+        border-radius: 9px;
+        @include item-title();
+        text-decoration: none;
+
+        // .donation__credit-card:hover
+
+        &:hover {
+            background-color: $color-primary-light;
+        }
+    }
+
     // .donation__text
 
     &__text {
@@ -416,24 +451,49 @@ body {
         margin: 20px 0 0;
     }
 }
-.credit-card {
-    
-    @include flex(center);
-    padding: 10px 15px;
-    background-color: $color-primary;
-    border-radius: 9px;
 
-    // .credit-card__icon
+.footer {
+    width: 100%;
+    background: $bg-color-dark;
 
-    &__icon {
-        display: block;
+    // .footer__container
+
+    &__container {
+        @include container();
+        @include flex();
+        padding: 40px 40px 0;
     }
 
-    // .credit-card__number
+    // .footer__content
 
-    &__number {
-        @include item-title();
-        margin: 0 0 0 15px;
-        text-decoration: none;
+    &__content {
+        max-width: 302px;
+    }
+
+    // .footer__title
+
+    &__title {
+        @include section-title();
+        color: $color-light-xl;
+    }
+
+    // .footer__email
+
+    &__email {
+        @include footer-content(url("../../assets/icons/icon-email.svg"));
+        margin: 40px 0;
+    }
+
+    // .footer__phone
+
+    &__phone {
+        @include footer-content(url("../../assets/icons/icon-phone.svg"));
+    }
+
+    // .footer__locations
+
+    &__locations {
+        margin-top: 32px;
+        @include footer-content(url("../../assets/icons/icon-marker.svg"), $padding-left: 42px);
     }
 }

@@ -150,6 +150,7 @@ body {
 }
 .about__title {
   font-family: "Georgia", serif;
+  font-weight: normal;
   font-size: 35px;
   line-height: 130%;
   letter-spacing: 0.06em;
@@ -174,6 +175,7 @@ body {
 }
 .pets__title {
   font-family: "Georgia", serif;
+  font-weight: normal;
   font-size: 35px;
   line-height: 130%;
   letter-spacing: 0.06em;
@@ -268,6 +270,7 @@ body {
 }
 .pets-item__title {
   font-family: "Georgia", serif;
+  font-weight: normal;
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 0.06em;
@@ -314,6 +317,7 @@ body {
 }
 .help__title {
   font-family: "Georgia", serif;
+  font-weight: normal;
   font-size: 35px;
   line-height: 130%;
   letter-spacing: 0.06em;
@@ -335,6 +339,7 @@ body {
 }
 .help-item__title {
   font-family: "Georgia", serif;
+  font-weight: normal;
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 0.06em;
@@ -363,6 +368,7 @@ body {
 }
 .donation__title {
   font-family: "Georgia", serif;
+  font-weight: normal;
   font-size: 35px;
   line-height: 130%;
   letter-spacing: 0.06em;
@@ -378,6 +384,26 @@ body {
   color: #545454;
   margin: 20px 0;
 }
+.donation__credit-card {
+  background-image: url("../../assets/icons/icon-credit-card.svg");
+  background-repeat: no-repeat;
+  background-position: 15px 10px;
+  padding: 10px 15px 10px 60px;
+  background-color: #f1cdb3;
+  border-radius: 9px;
+  font-family: "Georgia", serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #545454;
+  margin: 30px 0 30px;
+  text-align: center;
+  text-decoration: none;
+}
+.donation__credit-card:hover {
+  background-color: #fddcc4;
+}
 .donation__text {
   font-style: italic;
   font-size: 12px;
@@ -386,28 +412,75 @@ body {
   margin: 20px 0 0;
 }
 
-.credit-card {
+.footer {
+  width: 100%;
+  background: url("../../assets/images/bg-noise-transparent.png"), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
+}
+.footer__container {
+  width: 100%;
+  max-width: 1280px;
+  padding: 80px 40px 100px;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 10px 15px;
-  background-color: #f1cdb3;
-  border-radius: 9px;
+  padding: 40px 40px 0;
 }
-.credit-card__icon {
-  display: block;
+.footer__content {
+  max-width: 302px;
 }
-.credit-card__number {
+.footer__title {
+  font-family: "Georgia", serif;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #545454;
+  margin: 0;
+  text-align: left;
+  color: #ffffff;
+}
+.footer__email {
+  background-image: url("../../assets/icons/icon-email.svg");
+  background-repeat: no-repeat;
+  text-decoration: none;
   font-family: "Georgia", serif;
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 0.06em;
-  color: #545454;
-  margin: 30px 0 30px;
-  text-align: center;
-  margin: 0 0 0 15px;
+  color: #f1cdb3;
+  display: block;
+  padding-left: 60px;
+  min-height: 32px;
+  margin: 40px 0;
+}
+.footer__phone {
+  background-image: url("../../assets/icons/icon-phone.svg");
+  background-repeat: no-repeat;
   text-decoration: none;
+  font-family: "Georgia", serif;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #f1cdb3;
+  display: block;
+  padding-left: 60px;
+  min-height: 32px;
+}
+.footer__locations {
+  margin-top: 32px;
+  background-image: url("../../assets/icons/icon-marker.svg");
+  background-repeat: no-repeat;
+  text-decoration: none;
+  font-family: "Georgia", serif;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #f1cdb3;
+  display: block;
+  padding-left: 42px;
+  min-height: 32px;
 }
 
 /*# sourceMappingURL=style.css.map */
