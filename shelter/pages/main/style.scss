@@ -370,3 +370,70 @@ body {
         @include item-title(0);
     }
 }
+
+.donation {
+    width: 100%;
+    background-color: $color-light-l;
+
+    // .donation__container
+
+    &__container {
+        @include container();
+        @include flex(center);
+    }
+
+    // .donation__content
+
+    &__content {
+        margin-left: 30px;
+        max-width: 380px;
+    }
+
+    // .donation__title
+
+    &__title {
+        @include section-title();
+    }
+
+    // .donation__subtitle
+
+    &__subtitle {
+        font-family: $font-add;
+        font-size: 15px;
+        line-height: 110%;
+        letter-spacing: 0.06em;
+        color: $color-dark-l;
+        margin: 20px 0;
+    }
+
+    // .donation__text
+
+    &__text {
+        font-style: italic;
+        font-size: 12px;
+        line-height: 150%;
+        color: $color-dark-m;
+        margin: 20px 0 0;
+    }
+}
+.credit-card {
+    
+    @include flex(center);
+    padding: 10px 15px;
+    background-color: $color-primary;
+    border-radius: 9px;
+
+    // .credit-card__icon
+
+    &__icon {
+        display: block;
+    }
+
+    // .credit-card__number
+
+    &__number {
+        @include item-title();
+        margin: 0 0 0 15px;
+        text-decoration: none;
+    }
+}
