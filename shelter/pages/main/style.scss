@@ -18,11 +18,13 @@
     background-color: $color-primary;
     color: $color-dark-3xl;
     font-family: $font-add;
+    font-weight: normal;
     font-size: 17px;
     line-height: 130%;
     letter-spacing: 0.06em;
     border: none;
     outline: none;
+    text-decoration: none;
     border-radius: 100px;
     cursor: pointer;
     @include flex(center);

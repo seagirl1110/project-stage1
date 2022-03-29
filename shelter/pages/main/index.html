@@ -19,9 +19,9 @@
             <nav class="header__nav nav">
                 <ul class="nav__menu menu">
                     <li class="menu__item menu__item--active"><a href="" class="menu__link">About the shelter</a></li>
-                    <li class="menu__item"><a href="" class="menu__link">Our pets</a></li>
-                    <li class="menu__item"><a href="" class="menu__link">Help the shelter</a></li>
-                    <li class="menu__item"><a href="" class="menu__link">Contacts</a></li>
+                    <li class="menu__item"><a href="../pets/index.html" class="menu__link">Our pets</a></li>
+                    <li class="menu__item"><a href="#help" class="menu__link">Help the shelter</a></li>
+                    <li class="menu__item"><a href="#footer" class="menu__link">Contacts</a></li>
                 </ul>
             </nav>
         </div>
@@ -34,7 +34,7 @@
                     <div class="start-screen__text">We offer to give a chance to a little and nice puppy with an
                         extremely wide and open heart. He or she will love you more than anybody else in the world, you
                         will see!</div>
-                    <button class="start-screen__button">Make a friend</button>
+                    <a class="start-screen__button" href="#pets">Make a friend</a>
                 </div>
                 <img src="../../assets/images/start-screen-puppy.png" alt="puppy" class="start-screen__img" width="698"
                     height="728">
@@ -44,7 +44,9 @@
             <div class="about__container">
                 <img src="../../assets/images/about-pets.png" alt="pets" class="about__img" width="300" height="408">
                 <div class="about__content">
-                    <h3 class="about__title">About the shelter “Cozy House”</h3>
+                    <h3 class="about__title">About the shelter
+                        <br>“Cozy House”
+                    </h3>
                     <p class="about__text">Currently we have 121 dogs and 342 cats on our hands and statistics show that
                         only 20% of them will find a family. The others will continue to live with us and will be
                         waiting for a lucky chance to become dearly loved.</p>
@@ -56,7 +58,7 @@
                 </div>
             </div>
         </section>
-        <section class="pets">
+        <section class="pets" id="pets">
             <div class="pets__container">
                 <h3 class="pets__title">Our friends who
                     <br>are looking for a house
@@ -93,10 +95,10 @@
                         </svg>
                     </button>
                 </div>
-                <button class="pets__btn">Get to know the rest</button>
+                <a href="../pets/index.html" class="pets__btn">Get to know the rest</a>
             </div>
         </section>
-        <section class="help">
+        <section class="help" id="help">
             <div class="help__container">
                 <h3 class="help__title">How you can help
                     <br>our shelter
@@ -168,17 +170,17 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="footer__container">
             <div class="footer__content">
                 <h3 class="footer__title">For questions and suggestions</h3>
-                <a href="" class="footer__email">email@shelter.com</a>
-                <a href="" class="footer__phone">+13 674 567 75 54</a>
+                <a href="mailto:email@shelter.com" class="footer__email">email@shelter.com</a>
+                <a href="tel:+136745677554" class="footer__phone">+13 674 567 75 54</a>
             </div>
             <div class="footer__content">
                 <h3 class="footer__title">We are waiting for your visit</h3>
-                <a href="" class="footer__locations">1 Central Street, Boston (entrance from the store)</a>
-                <a href="" class="footer__locations">18 South Park, London </a>
+                <a href="" class="footer__locations" target="_blank">1 Central Street, Boston (entrance from the store)</a>
+                <a href="" class="footer__locations" target="_blank">18 South Park, London </a>
             </div>
             <img src="../../assets/images/footer-puppy.png" alt="puppy" class="footer__img" width="300" height="310">
         </div>
