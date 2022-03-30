@@ -3,6 +3,12 @@
 .header {
     background: $color-light-xl;
     position: fixed;
+    
+		// .header__container
+
+		&__container {
+            padding: 30px 40px;
+		}
 }
 
 .logo {
@@ -52,4 +58,8 @@
     &__link {
         color: $color-dark-l;
     }
+}
+
+.main {
+    padding-top: 120px;
 }

@@ -2,6 +2,9 @@
   background: #ffffff;
   position: fixed;
 }
+.header__container {
+  padding: 30px 40px;
+}
 
 .logo__title {
   color: #545454;
@@ -18,6 +21,10 @@
 }
 .menu__link {
   color: #545454;
+}
+
+.main {
+  padding-top: 120px;
 }
 
 /*# sourceMappingURL=style.css.map */
