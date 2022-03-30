@@ -1,1 +1,55 @@
-@import '../../assets/styles/mixins.scss';
+@import "../../assets/styles/mixins.scss";
+
+.header {
+    background: $color-light-xl;
+    position: fixed;
+}
+
+.logo {
+    // .logo__title
+
+    &__title {
+        color: $color-dark-l;
+    }
+
+    // .logo__text
+
+    &__text {
+        color: $color-dark-3xl;
+    }
+}
+
+.menu {
+
+    // .menu__item
+
+    &__item {
+    
+        // .menu__item--active
+
+        &--active {
+
+            // .menu__item--active .menu__link
+
+            & .menu__link {
+                color: $color-dark-3xl;
+            }
+        }
+
+        // .menu__item:hover
+
+        &:hover {
+            // .menu__item:hover .menu__link
+
+            & .menu__link {
+                color: $color-dark-3xl;
+            }
+        }
+    }
+
+    // .menu__link
+
+    &__link {
+        color: $color-dark-l;
+    }
+}

@@ -1,0 +1,23 @@
+.header {
+  background: #ffffff;
+  position: fixed;
+}
+
+.logo__title {
+  color: #545454;
+}
+.logo__text {
+  color: #292929;
+}
+
+.menu__item--active .menu__link {
+  color: #292929;
+}
+.menu__item:hover .menu__link {
+  color: #292929;
+}
+.menu__link {
+  color: #545454;
+}
+
+/*# sourceMappingURL=style.css.map */
