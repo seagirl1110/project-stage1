@@ -1,6 +1,7 @@
 .header {
   background: #ffffff;
-  position: fixed;
+  position: sticky;
+  top: 0;
 }
 .header__container {
   padding: 30px 40px;
@@ -23,8 +24,58 @@
   color: #545454;
 }
 
-.main {
-  padding-top: 120px;
+.pets-slider__inner {
+  gap: 30px 40px;
+}
+.pets-slider__pagination-btns {
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.pets-slider__pagination {
+  width: 52px;
+  height: 52px;
+  background-color: #f1cdb3;
+  color: #292929;
+  font-family: "Georgia", "Century Schoolbook L", serif;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  border-radius: 100px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 2px solid #f1cdb3;
+  background-color: transparent;
+}
+.pets-slider__pagination:hover:not([disabled]) {
+  background-color: #fddcc4;
+}
+.pets-slider__pagination:hover {
+  border: none;
+}
+.pets-slider__pagination--page {
+  background-color: #fddcc4;
+  border: none;
+  cursor: auto;
+}
+.pets-slider__pagination:disabled {
+  border: 2px solid #cdcdcd;
+  pointer-events: none;
+}
+
+.pets-item:hover .pets-item__btn {
+  background-color: #fddcc4;
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */

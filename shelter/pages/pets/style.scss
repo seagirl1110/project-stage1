@@ -2,13 +2,14 @@
 
 .header {
     background: $color-light-xl;
-    position: fixed;
-    
-		// .header__container
+    position: sticky;
+    top: 0;
 
-		&__container {
-            padding: 30px 40px;
-		}
+    // .header__container
+
+    &__container {
+        padding: 30px 40px;
+    }
 }
 
 .logo {
@@ -26,15 +27,12 @@
 }
 
 .menu {
-
     // .menu__item
 
     &__item {
-    
         // .menu__item--active
 
         &--active {
-
             // .menu__item--active .menu__link
 
             & .menu__link {
@@ -60,6 +58,48 @@
     }
 }
 
-.main {
-    padding-top: 120px;
+.pets-slider {
+    // .pets-slider__inner
+
+    &__inner {
+        gap: 30px 40px;
+    }
+
+    // .pets-slider__pagination-btns
+
+    &__pagination-btns {
+        margin-top: 45px;
+        @include flex(center);
+        gap: 20px;
+    }
+
+    // .pets-slider__pagination
+
+    &__pagination {
+        @include btn(52px);
+        @include btn-add();
+
+        // pets-slider__pagination--page
+
+        &--page {
+            background-color: $color-primary-light;
+            border: none;
+            cursor: auto;
+        }
+
+        // .pets-slider__pagination:disabled
+        &:disabled {
+            border: 2px solid $color-dark-s;
+            pointer-events: none;
+        }
+    }
+}
+
+.pets-item {
+    // .pets-item:hover .pets-item__btn
+
+    &:hover .pets-item__btn {
+        background-color: $color-primary-light;
+        border: none;
+    }
 }

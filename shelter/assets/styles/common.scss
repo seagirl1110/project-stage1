@@ -1,3 +1,5 @@
+@import '../../assets/styles/mixins.scss';
+
 html {
     scroll-behavior: smooth;
     box-sizing: border-box;
@@ -121,20 +123,11 @@ body {
 }
 
 .pets-slider {
-    @include flex();
-
-    // .pets-slider__btn
-
-    &__btn {
-        @include btn(52px);
-        @include btn-add();
-    }
 
     // .pets-slider__inner
 
     &__inner {
         @include flex();
-        gap: 90px;
     }
 }
 
@@ -151,6 +144,7 @@ body {
     &:hover {
         cursor: pointer;
         background-color: $color-light-xl;
+        box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
     }
 
     // .pets-item__img

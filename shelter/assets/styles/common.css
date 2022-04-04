@@ -11,7 +11,7 @@ html {
 
 body {
   width: 100%;
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -37,7 +37,7 @@ body {
 
 .logo__title {
   color: #f1cdb3;
-  font-family: "Georgia", serif;
+  font-family: "Georgia", "Century Schoolbook L", serif;
   margin: 0 0 10px;
   padding: 0;
   font-size: 32px;
@@ -88,7 +88,7 @@ body {
   margin: 0 auto;
 }
 .pets__title {
-  font-family: "Georgia", serif;
+  font-family: "Georgia", "Century Schoolbook L", serif;
   font-weight: normal;
   font-size: 35px;
   line-height: 130%;
@@ -101,18 +101,12 @@ body {
   margin: 60px 0;
 }
 
-.pets-slider {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
 .pets-slider__btn {
   width: 52px;
   height: 52px;
   background-color: #f1cdb3;
   color: #292929;
-  font-family: "Georgia", serif;
+  font-family: "Georgia", "Century Schoolbook L", serif;
   font-weight: normal;
   font-size: 17px;
   line-height: 130%;
@@ -140,7 +134,6 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 90px;
 }
 
 .pets-item {
@@ -157,13 +150,14 @@ body {
 .pets-item:hover {
   cursor: pointer;
   background-color: #ffffff;
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
 .pets-item__img {
   display: block;
   border-radius: 9px 9px 0 0;
 }
 .pets-item__title {
-  font-family: "Georgia", serif;
+  font-family: "Georgia", "Century Schoolbook L", serif;
   font-weight: normal;
   font-size: 20px;
   line-height: 115%;
@@ -177,7 +171,7 @@ body {
   height: 52px;
   background-color: #f1cdb3;
   color: #292929;
-  font-family: "Georgia", serif;
+  font-family: "Georgia", "Century Schoolbook L", serif;
   font-weight: normal;
   font-size: 17px;
   line-height: 130%;
@@ -220,7 +214,7 @@ body {
   max-width: 302px;
 }
 .footer__title {
-  font-family: "Georgia", serif;
+  font-family: "Georgia", "Century Schoolbook L", serif;
   font-weight: normal;
   font-size: 35px;
   line-height: 130%;
@@ -234,7 +228,7 @@ body {
   background-image: url("../../assets/icons/icon-email.svg");
   background-repeat: no-repeat;
   text-decoration: none;
-  font-family: "Georgia", serif;
+  font-family: "Georgia", "Century Schoolbook L", serif;
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 0.06em;
@@ -248,7 +242,7 @@ body {
   background-image: url("../../assets/icons/icon-phone.svg");
   background-repeat: no-repeat;
   text-decoration: none;
-  font-family: "Georgia", serif;
+  font-family: "Georgia", "Century Schoolbook L", serif;
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 0.06em;
@@ -262,7 +256,7 @@ body {
   background-image: url("../../assets/icons/icon-marker.svg");
   background-repeat: no-repeat;
   text-decoration: none;
-  font-family: "Georgia", serif;
+  font-family: "Georgia", "Century Schoolbook L", serif;
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 0.06em;

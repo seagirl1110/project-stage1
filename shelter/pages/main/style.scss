@@ -1,4 +1,4 @@
-@import '../../assets/styles/mixins.scss';
+@import "../../assets/styles/mixins.scss";
 
 .start-screen {
     width: 100%;
@@ -97,43 +97,7 @@
     // .pets-slider__inner
 
     &__inner {
-        @include flex();
         gap: 90px;
-    }
-}
-.pets-item {
-    @include flex();
-    flex-direction: column;
-    background-color: $color-light-s;
-    max-width: 270px;
-    border-radius: 9px;
-    padding: 0 0 30px;
-
-    // .pets-item:hover
-
-    &:hover {
-        cursor: pointer;
-        background-color: $color-light-xl;
-    }
-
-    // .pets-item__img
-
-    &__img {
-        display: block;
-        border-radius: 9px 9px 0 0;
-    }
-
-    // .pets-item__title
-
-    &__title {
-        @include item-title();
-    }
-
-    // .pets-item__btn
-
-    &__btn {
-        @include btn(187px);
-        @include btn-add();
     }
 }
 
