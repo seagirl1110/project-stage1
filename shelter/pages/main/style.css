@@ -116,6 +116,34 @@
   align-items: center;
   flex-wrap: wrap;
 }
+.pets-slider__btn {
+  width: 52px;
+  height: 52px;
+  background-color: #f1cdb3;
+  color: #292929;
+  font-family: "Georgia", "Century Schoolbook L", serif;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  border-radius: 100px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 2px solid #f1cdb3;
+  background-color: transparent;
+}
+.pets-slider__btn:hover {
+  background-color: #fddcc4;
+}
+.pets-slider__btn:hover {
+  border: none;
+}
 .pets-slider__inner {
   gap: 90px;
 }
