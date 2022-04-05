@@ -58,6 +58,10 @@
     }
 }
 
+.pets__container {
+    padding: 80px 40px 40px;
+}
+
 .pets-slider {
     // .pets-slider__inner
 
@@ -68,7 +72,7 @@
     // .pets-slider__pagination-btns
 
     &__pagination-btns {
-        margin-top: 45px;
+        margin-top: 59px;
         @include flex(center);
         gap: 20px;
     }
@@ -92,14 +96,5 @@
             border: 2px solid $color-dark-s;
             pointer-events: none;
         }
-    }
-}
-
-.pets-item {
-    // .pets-item:hover .pets-item__btn
-
-    &:hover .pets-item__btn {
-        background-color: $color-primary-light;
-        border: none;
     }
 }

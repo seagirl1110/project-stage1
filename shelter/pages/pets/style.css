@@ -57,7 +57,7 @@
   border: 2px solid #f1cdb3;
   background-color: transparent;
 }
-.pets-slider__pagination:hover:not([disabled]) {
+.pets-slider__pagination:hover {
   background-color: #fddcc4;
 }
 .pets-slider__pagination:hover {
@@ -71,11 +71,6 @@
 .pets-slider__pagination:disabled {
   border: 2px solid #cdcdcd;
   pointer-events: none;
-}
-
-.pets-item:hover .pets-item__btn {
-  background-color: #fddcc4;
-  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */

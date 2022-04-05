@@ -74,9 +74,10 @@
     line-height: 115%;
     letter-spacing: 0.06em;
     color: $color-primary;
-    display: block;
+    display: flex;
+    align-items: center;
     padding-left: $padding-left;
-    min-height: 32px;
+    min-height: 40px;
 }
 
 $font-main: "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;

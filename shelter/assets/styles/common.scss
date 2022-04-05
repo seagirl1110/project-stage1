@@ -1,5 +1,5 @@
-@import './fonts.scss';
-@import '../../assets/styles/mixins.scss';
+@import "./fonts.scss";
+@import "../../assets/styles/mixins.scss";
 
 html {
     scroll-behavior: smooth;
@@ -36,6 +36,12 @@ body {
 }
 
 .logo {
+    // .logo__link
+
+    &__link {
+        text-decoration: none;
+    }
+
     // .logo__title
 
     &__title {
@@ -55,6 +61,7 @@ body {
         font-size: 13px;
         line-height: 15px;
         letter-spacing: 0.1em;
+        padding-left: 4px;
     }
 }
 
@@ -67,7 +74,7 @@ body {
 
     &__item {
         list-style: none;
-        margin-left: 35px;
+        margin-left: 36px;
 
         // .menu__item--active
 
@@ -124,7 +131,6 @@ body {
 }
 
 .pets-slider {
-
     // .pets-slider__inner
 
     &__inner {
@@ -136,7 +142,7 @@ body {
     @include flex();
     flex-direction: column;
     background-color: $color-light-s;
-    max-width: 270px;
+    width: 270px;
     border-radius: 9px;
     padding: 0 0 30px;
 
@@ -166,6 +172,13 @@ body {
     &__btn {
         @include btn(187px);
         @include btn-add();
+
+        // .pets-item:hover .pets-item__btn
+
+        .pets-item:hover & {
+            background-color: $color-primary-light;
+            border: none;
+        }
     }
 }
 
@@ -179,12 +192,14 @@ body {
         @include container();
         @include flex();
         padding: 40px 40px 0;
+        align-items: flex-start;
     }
 
     // .footer__content
 
     &__content {
         max-width: 302px;
+        margin-top: 17px;
     }
 
     // .footer__title
@@ -192,13 +207,14 @@ body {
     &__title {
         @include section-title();
         color: $color-light-xl;
+        margin-bottom: 32px;
     }
 
     // .footer__email
 
     &__email {
         @include footer-content(url("../../assets/icons/icon-email.svg"));
-        margin: 40px 0;
+        margin: 37px 0 32px;
     }
 
     // .footer__phone
@@ -210,7 +226,13 @@ body {
     // .footer__locations
 
     &__locations {
-        margin-top: 32px;
-        @include footer-content(url("../../assets/icons/icon-marker.svg"), $padding-left: 42px);
+        margin: 30px 0;
+        @include footer-content(url("../../assets/icons/icon-marker.svg"), $padding-left: 40px);
+        background-position: 0px 5px;
+    }
+
+    // .footer__img
+    &__img {
+        margin-left: 23px;
     }
 }
