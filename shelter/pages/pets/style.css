@@ -24,11 +24,15 @@
   color: #545454;
 }
 
+.pets__container {
+  padding: 80px 40px 40px;
+}
+
 .pets-slider__inner {
   gap: 30px 40px;
 }
 .pets-slider__pagination-btns {
-  margin-top: 45px;
+  margin-top: 59px;
   display: flex;
   justify-content: center;
   align-items: center;
