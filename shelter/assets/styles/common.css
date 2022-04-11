@@ -170,6 +170,7 @@ body {
 .menu__link {
   text-decoration: none;
   color: #cdcdcd;
+  transition: color 0.3s;
 }
 
 .pets {
@@ -213,6 +214,7 @@ body {
   width: 270px;
   border-radius: 9px;
   padding: 0 0 30px;
+  transition: all 0.3s;
 }
 .pets-item:hover {
   cursor: pointer;
@@ -252,6 +254,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  transition: background-color 0.3s;
   border: 2px solid #f1cdb3;
   background-color: transparent;
 }

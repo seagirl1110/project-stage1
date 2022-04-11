@@ -58,6 +58,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  transition: background-color 0.3s;
   border: 2px solid #f1cdb3;
   background-color: transparent;
 }
