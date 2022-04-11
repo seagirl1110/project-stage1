@@ -28,6 +28,7 @@
     border-radius: 100px;
     cursor: pointer;
     @include flex(center);
+    transition: background-color 0.3s;
 
     &:hover {
         background-color: $color-primary-light;

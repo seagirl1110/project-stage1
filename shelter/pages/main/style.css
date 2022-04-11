@@ -49,6 +49,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  transition: background-color 0.3s;
 }
 .start-screen__button:hover {
   background-color: #fddcc4;
@@ -106,6 +107,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  transition: background-color 0.3s;
   margin: 0 auto;
 }
 .pets__btn:hover {
@@ -137,6 +139,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  transition: background-color 0.3s;
   border: 2px solid #f1cdb3;
   background-color: transparent;
 }
@@ -250,6 +253,7 @@
   margin: 30px 0 30px;
   text-align: center;
   text-decoration: none;
+  transition: background-color 0.3s;
 }
 .donation__credit-card:hover {
   background-color: #fddcc4;

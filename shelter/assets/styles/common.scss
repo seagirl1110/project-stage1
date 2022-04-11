@@ -104,6 +104,7 @@ body {
     &__link {
         text-decoration: none;
         color: $color-dark-s;
+        transition: color 0.3s;
     }
 }
 
@@ -145,6 +146,7 @@ body {
     width: 270px;
     border-radius: 9px;
     padding: 0 0 30px;
+    transition: all 0.3s;
 
     // .pets-item:hover
 
