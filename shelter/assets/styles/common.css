@@ -308,9 +308,19 @@ body {
     padding: 80px 30px 100px;
   }
 }
+@media screen and (max-width: 1279px) {
+  .footer__container {
+    padding: 30px 64px 0;
+  }
+}
 .footer__content {
   max-width: 302px;
   margin-top: 17px;
+}
+@media screen and (max-width: 1279px) {
+  .footer__content {
+    margin: 0;
+  }
 }
 .footer__title {
   font-family: "Georgia", "Century Schoolbook L", serif;
@@ -371,6 +381,11 @@ body {
 }
 .footer__img {
   margin-left: 23px;
+}
+@media screen and (max-width: 1279px) {
+  .footer__img {
+    margin: 30px auto 0;
+  }
 }
 
 /*# sourceMappingURL=common.css.map */

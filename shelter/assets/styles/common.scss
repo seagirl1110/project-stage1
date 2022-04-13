@@ -199,6 +199,10 @@ body {
         @include flex();
         padding: 40px 40px 0;
         align-items: flex-start;
+
+        @media screen and (max-width: 1279px) {
+         padding: 30px 64px 0;   
+        }
     }
 
     // .footer__content
@@ -206,6 +210,10 @@ body {
     &__content {
         max-width: 302px;
         margin-top: 17px;
+
+        @media screen and (max-width: 1279px) {
+         margin: 0;   
+        }
     }
 
     // .footer__title
@@ -240,5 +248,9 @@ body {
     // .footer__img
     &__img {
         margin-left: 23px;
+
+        @media screen and (max-width: 1279px) {
+         margin: 30px auto 0;   
+        }
     }
 }
