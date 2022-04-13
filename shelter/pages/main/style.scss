@@ -110,6 +110,12 @@
 
 .pets-slider {
     @include flex();
+    flex-wrap: nowrap;
+
+    @media screen and (max-width: 1279px) {
+     gap: 12px;
+     justify-content: center;       
+    }
 
     // .pets-slider__btn
 
@@ -122,6 +128,16 @@
 
     &__inner {
         gap: 90px;
+
+        @media screen and (max-width: 1279px) {
+            gap: 40px;
+        }
+    }
+}
+
+.pets-item--3 {
+    @media screen and (max-width: 1279px) {
+        display: none;
     }
 }
 

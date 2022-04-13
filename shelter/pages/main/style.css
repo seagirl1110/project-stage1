@@ -155,6 +155,13 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  flex-wrap: nowrap;
+}
+@media screen and (max-width: 1279px) {
+  .pets-slider {
+    gap: 12px;
+    justify-content: center;
+  }
 }
 .pets-slider__btn {
   width: 52px;
@@ -187,6 +194,17 @@
 }
 .pets-slider__inner {
   gap: 90px;
+}
+@media screen and (max-width: 1279px) {
+  .pets-slider__inner {
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .pets-item--3 {
+    display: none;
+  }
 }
 
 .help {
