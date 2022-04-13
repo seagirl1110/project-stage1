@@ -113,8 +113,8 @@
     flex-wrap: nowrap;
 
     @media screen and (max-width: 1279px) {
-     gap: 12px;
-     justify-content: center;       
+        gap: 12px;
+        justify-content: center;
     }
 
     // .pets-slider__btn
@@ -163,11 +163,21 @@
         margin: 60px 0 0;
         @include flex(center);
         gap: 55px 120px;
+
+        @media screen and (max-width: 1279px) {
+            width: 630px;
+            margin: 60px auto 0;
+            column-gap: 60px;
+        }
     }
 }
 
 .help-item {
     text-align: center;
+
+    @media screen and (max-width: 1279px) {
+        width: 170px;
+    }
 
     // .help-item__title
 

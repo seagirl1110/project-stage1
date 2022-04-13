@@ -240,9 +240,21 @@
   flex-wrap: wrap;
   gap: 55px 120px;
 }
+@media screen and (max-width: 1279px) {
+  .help__list {
+    width: 630px;
+    margin: 60px auto 0;
+    column-gap: 60px;
+  }
+}
 
 .help-item {
   text-align: center;
+}
+@media screen and (max-width: 1279px) {
+  .help-item {
+    width: 170px;
+  }
 }
 .help-item__title {
   font-family: "Georgia", "Century Schoolbook L", serif;
