@@ -11,7 +11,7 @@
         padding: 30px 40px;
 
         @media screen and (max-width: 1279px) {
-         padding: 30px;   
+            padding: 30px;
         }
     }
 }
@@ -64,13 +64,24 @@
 
 .pets__container {
     padding: 80px 40px 40px;
+    @media screen and (max-width: 1279px) {
+        padding: 80px 30px 45px;       
+    }
 }
 
 .pets-slider {
+
+    @media screen and (max-width: 1279px) {
+            margin: 30px 0;
+    }
     // .pets-slider__inner
 
     &__inner {
         gap: 30px 40px;
+
+        @media screen and (max-width: 1279px) {
+         justify-content: center; 
+        }
     }
 
     // .pets-slider__pagination-btns
@@ -79,6 +90,10 @@
         margin-top: 59px;
         @include flex(center);
         gap: 20px;
+
+        @media screen and (max-width: 1279px) {
+            margin-top: 39px;   
+        }
     }
 
     // .pets-slider__pagination
@@ -100,5 +115,12 @@
             border: 2px solid $color-dark-s;
             pointer-events: none;
         }
+    }
+}
+
+.pets-item--7,
+.pets-item--8 {
+    @media screen and (max-width: 1279px) {
+        display: none;
     }
 }
