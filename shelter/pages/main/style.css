@@ -287,12 +287,23 @@
     padding: 80px 30px 100px;
   }
 }
+@media screen and (max-width: 1279px) {
+  .donation__container {
+    flex-wrap: wrap-reverse;
+    max-width: 800px;
+  }
+}
 .donation__img {
   margin-top: 1px;
 }
 .donation__content {
   margin-left: 30px;
   max-width: 380px;
+}
+@media screen and (max-width: 1279px) {
+  .donation__content {
+    margin: 1px 0 59px;
+  }
 }
 .donation__title {
   font-family: "Georgia", "Century Schoolbook L", serif;

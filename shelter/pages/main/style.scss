@@ -196,6 +196,11 @@
     &__container {
         @include container();
         @include flex(center);
+
+        @media screen and (max-width: 1279px) {
+            flex-wrap: wrap-reverse;   
+            max-width: 800px;
+        }
     }
 
     // .donation__img
@@ -209,6 +214,10 @@
     &__content {
         margin-left: 30px;
         max-width: 380px;
+
+        @media screen and (max-width: 1279px) {
+            margin: 1px 0 59px;   
+        }
     }
 
     // .donation__title
