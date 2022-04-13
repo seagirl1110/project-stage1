@@ -94,14 +94,19 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap: 79px 120px;
 }
 @media screen and (max-width: 1279px) {
   .about__container {
     padding: 80px 30px 100px;
   }
 }
+@media screen and (max-width: 1279px) {
+  .about__container {
+    flex-wrap: wrap-reverse;
+  }
+}
 .about__content {
-  margin-left: 120px;
   max-width: 430px;
 }
 .about__title {
