@@ -9,6 +9,10 @@
 
     &__container {
         padding: 30px 40px;
+
+        @media screen and (max-width: 1279px) {
+         padding: 30px;   
+        }
     }
 }
 

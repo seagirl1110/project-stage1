@@ -6,6 +6,11 @@
 .header__container {
   padding: 30px 40px;
 }
+@media screen and (max-width: 1279px) {
+  .header__container {
+    padding: 30px;
+  }
+}
 
 .logo__title {
   color: #545454;
