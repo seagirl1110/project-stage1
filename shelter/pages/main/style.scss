@@ -12,6 +12,9 @@
         @include container();
         @include flex();
         padding: 60px 40px 0;
+        @media screen and (max-width: 1279px) {
+            padding: 60px 30px 0;
+        }
     }
 
     // .start-screen__content
@@ -19,6 +22,10 @@
     &__content {
         max-width: 460px;
         margin-bottom: 80px;
+
+        @media screen and (max-width: 1279px) {
+            margin: 0 auto 100px;
+        }
     }
 
     // .start-screen__title
@@ -42,6 +49,17 @@
 
     &__button {
         @include btn();
+        @media screen and (max-width: 1279px) {
+            margin: 0 auto;
+        }
+    }
+
+    // .start-screen__img
+    &__img {
+        @media screen and (max-width: 1279px) {
+            margin-left: auto;
+            width: 569px;
+        }
     }
 }
 
