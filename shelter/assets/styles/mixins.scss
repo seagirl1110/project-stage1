@@ -61,6 +61,11 @@
     color: $color-dark-l;
     margin: 0;
     text-align: $align;
+
+    @media screen and (max-width: 767px) {
+        font-size: 25px;
+        text-align: center;
+    }
 }
 
 @mixin item-title($margin-bottom: 30px) {

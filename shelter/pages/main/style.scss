@@ -32,7 +32,6 @@
         @media screen and (max-width: 767px) {
             margin: 0 auto 105px;
             text-align: center;
-            
         }
     }
 
@@ -94,6 +93,17 @@
         @media screen and (max-width: 1279px) {
             flex-wrap: wrap-reverse;
         }
+        @media screen and (max-width: 767px) {
+            gap: 18px;
+        }
+    }
+
+    // .about__img
+
+    &__img {
+        @media screen and (max-width: 767px) {
+            width: 260px;
+        }
     }
 
     // .about__content
@@ -106,6 +116,10 @@
 
     &__title {
         @include section-title();
+
+        @media screen and (max-width: 767px) {
+            margin-bottom: 25px;
+        }
     }
 
     // .about__text
@@ -113,6 +127,12 @@
     &__text {
         margin: 25px 0 0;
         color: $color-dark-xl;
+
+        @media screen and (max-width: 767px) {
+            text-align: justify;
+            max-width: 270px;
+            margin: 22px auto;
+        }
     }
 }
 
