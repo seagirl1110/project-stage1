@@ -21,9 +21,20 @@
     padding: 80px 30px 100px;
   }
 }
+@media screen and (max-width: 767px) {
+  .start-screen__container {
+    max-width: 320px;
+    padding: 42px 10px;
+  }
+}
 @media screen and (max-width: 1279px) {
   .start-screen__container {
     padding: 60px 30px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .start-screen__container {
+    padding: 60px 10px 1px;
   }
 }
 .start-screen__content {
@@ -35,6 +46,12 @@
     margin: 0 auto 100px;
   }
 }
+@media screen and (max-width: 767px) {
+  .start-screen__content {
+    margin: 0 auto 105px;
+    text-align: center;
+  }
+}
 .start-screen__title {
   font-family: "Georgia", "Century Schoolbook L", serif;
   font-size: 44px;
@@ -42,6 +59,12 @@
   font-weight: normal;
   color: #ffffff;
   margin: 0 0 42px;
+}
+@media screen and (max-width: 767px) {
+  .start-screen__title {
+    font-size: 25px;
+    letter-spacing: 0.06em;
+  }
 }
 .start-screen__text {
   margin: 0 0 41px;
@@ -81,6 +104,12 @@
     width: 569px;
   }
 }
+@media screen and (max-width: 767px) {
+  .start-screen__img {
+    margin-left: auto;
+    width: 260px;
+  }
+}
 
 .about {
   width: 100%;
@@ -101,6 +130,12 @@
   .about__container {
     max-width: 768px;
     padding: 80px 30px 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about__container {
+    max-width: 320px;
+    padding: 42px 10px;
   }
 }
 @media screen and (max-width: 1279px) {
@@ -225,6 +260,12 @@
     padding: 80px 30px 100px;
   }
 }
+@media screen and (max-width: 767px) {
+  .help__container {
+    max-width: 320px;
+    padding: 42px 10px;
+  }
+}
 .help__title {
   font-family: "Georgia", "Century Schoolbook L", serif;
   font-weight: normal;
@@ -289,6 +330,12 @@
   .donation__container {
     max-width: 768px;
     padding: 80px 30px 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .donation__container {
+    max-width: 320px;
+    padding: 42px 10px;
   }
 }
 @media screen and (max-width: 1279px) {

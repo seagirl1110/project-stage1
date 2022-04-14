@@ -15,6 +15,9 @@
         @media screen and (max-width: 1279px) {
             padding: 60px 30px 0;
         }
+        @media screen and (max-width: 767px) {
+            padding: 60px 10px 1px;
+        }
     }
 
     // .start-screen__content
@@ -25,6 +28,11 @@
 
         @media screen and (max-width: 1279px) {
             margin: 0 auto 100px;
+        }
+        @media screen and (max-width: 767px) {
+            margin: 0 auto 105px;
+            text-align: center;
+            
         }
     }
 
@@ -37,6 +45,11 @@
         font-weight: normal;
         color: $color-light-xl;
         margin: 0 0 42px;
+
+        @media screen and (max-width: 767px) {
+            font-size: 25px;
+            letter-spacing: 0.06em;
+        }
     }
 
     // .start-screen__text
@@ -59,6 +72,10 @@
         @media screen and (max-width: 1279px) {
             margin-left: auto;
             width: 569px;
+        }
+        @media screen and (max-width: 767px) {
+            margin-left: auto;
+            width: 260px;
         }
     }
 }
@@ -198,7 +215,7 @@
         @include flex(center);
 
         @media screen and (max-width: 1279px) {
-            flex-wrap: wrap-reverse;   
+            flex-wrap: wrap-reverse;
             max-width: 800px;
         }
     }
@@ -216,7 +233,7 @@
         max-width: 380px;
 
         @media screen and (max-width: 1279px) {
-            margin: 1px 0 59px;   
+            margin: 1px 0 59px;
         }
     }
 
