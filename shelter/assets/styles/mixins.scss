@@ -7,6 +7,10 @@
         max-width: 768px;
         padding: 80px 30px 100px;    
     }
+    @media screen and (max-width: 767px) {
+        max-width: 320px;
+        padding: 42px 10px;    
+    }
 }
 
 @mixin flex($align: space-between) {
