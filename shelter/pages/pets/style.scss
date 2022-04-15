@@ -13,6 +13,10 @@
         @media screen and (max-width: 1279px) {
             padding: 30px;
         }
+
+        @media screen and (max-width: 767px) {
+            padding: 30px 10px;
+        }
     }
 }
 
@@ -62,25 +66,38 @@
     }
 }
 
+.burger-menu__item {
+    border: 1px solid #000000;
+}
+
 .pets__container {
     padding: 80px 40px 40px;
+
     @media screen and (max-width: 1279px) {
-        padding: 80px 30px 46px;       
+        padding: 80px 30px 46px;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 42px 10px;
     }
 }
 
 .pets-slider {
-
     @media screen and (max-width: 1279px) {
-            margin: 30px 0;
+        margin: 30px 0;
     }
+
+    @media screen and (max-width: 767px) {
+        margin: 41px 0;
+    }
+
     // .pets-slider__inner
 
     &__inner {
         gap: 30px 40px;
 
         @media screen and (max-width: 1279px) {
-         justify-content: center; 
+            justify-content: center;
         }
     }
 
@@ -92,7 +109,7 @@
         gap: 20px;
 
         @media screen and (max-width: 1279px) {
-            margin-top: 39px;   
+            margin-top: 39px;
         }
     }
 
