@@ -229,8 +229,9 @@ body {
         @media screen and (max-width: 1279px) {
             padding: 30px 64px 0;
         }
-        @media screen and (max-width: 1279px) {
+        @media screen and (max-width: 767px) {
             padding: 30px 10px 0;
+            gap: 35px;
         }
     }
 
@@ -251,6 +252,11 @@ body {
         @include section-title();
         color: $color-light-xl;
         margin-bottom: 32px;
+
+        @media screen and (max-width: 767px) {
+            width: 294px;
+            padding-left: 5px;
+        }
     }
 
     // .footer__email
@@ -258,12 +264,20 @@ body {
     &__email {
         @include footer-content(url("../../assets/icons/icon-email.svg"));
         margin: 37px 0 32px;
+
+        @media screen and (max-width: 767px) {
+            margin-left: 25px;
+        }
     }
 
     // .footer__phone
 
     &__phone {
         @include footer-content(url("../../assets/icons/icon-phone.svg"));
+
+        @media screen and (max-width: 767px) {
+            margin-left: 30px;
+        }
     }
 
     // .footer__locations
@@ -272,6 +286,10 @@ body {
         margin: 30px 0;
         @include footer-content(url("../../assets/icons/icon-marker.svg"), $padding-left: 40px);
         background-position: 0px 5px;
+
+        @media screen and (max-width: 767px) {
+            margin: 37px 0 0;
+        }
     }
 
     // .footer__img
@@ -280,6 +298,11 @@ body {
 
         @media screen and (max-width: 1279px) {
             margin: 30px auto 0;
+        }
+
+        @media screen and (max-width: 767px) {
+            width: 260px;
+            margin: 0 auto;
         }
     }
 }
