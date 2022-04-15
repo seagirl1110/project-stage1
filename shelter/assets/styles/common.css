@@ -364,6 +364,11 @@ body {
     padding: 30px 64px 0;
   }
 }
+@media screen and (max-width: 1279px) {
+  .footer__container {
+    padding: 30px 10px 0;
+  }
+}
 .footer__content {
   max-width: 302px;
   margin-top: 17px;

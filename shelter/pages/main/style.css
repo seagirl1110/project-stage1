@@ -379,13 +379,9 @@
 }
 @media screen and (max-width: 767px) {
   .help-item__title {
+    margin-top: 14px;
     font-size: 15px;
     line-height: 110%;
-  }
-}
-@media screen and (max-width: 767px) {
-  .help-item__title {
-    margin-top: 14px;
   }
 }
 
@@ -499,18 +495,14 @@
   text-decoration: none;
   transition: background-color 0.3s;
 }
-@media screen and (max-width: 767px) {
-  .donation__credit-card {
-    font-size: 15px;
-    line-height: 110%;
-  }
-}
 .donation__credit-card:hover {
   background-color: #fddcc4;
 }
 @media screen and (max-width: 767px) {
   .donation__credit-card {
     padding: 13px 15px 13px 60px;
+    font-size: 15px;
+    line-height: 110%;
   }
 }
 .donation__text {

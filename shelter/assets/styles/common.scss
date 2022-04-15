@@ -80,7 +80,7 @@ body {
     @media screen and (max-width: 767px) {
         display: none;
     }
-    
+
     // .menu__item
 
     &__item {
@@ -228,6 +228,9 @@ body {
 
         @media screen and (max-width: 1279px) {
             padding: 30px 64px 0;
+        }
+        @media screen and (max-width: 1279px) {
+            padding: 30px 10px 0;
         }
     }
 
