@@ -381,6 +381,10 @@
   .help-item__title {
     font-size: 15px;
     line-height: 110%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .help-item__title {
     margin-top: 14px;
   }
 }
@@ -417,8 +421,18 @@
     max-width: 800px;
   }
 }
+@media screen and (max-width: 767px) {
+  .donation__container {
+    padding: 40px 10px;
+  }
+}
 .donation__img {
   margin-top: 1px;
+}
+@media screen and (max-width: 767px) {
+  .donation__img {
+    width: 260px;
+  }
 }
 .donation__content {
   margin-left: 30px;
@@ -427,6 +441,12 @@
 @media screen and (max-width: 1279px) {
   .donation__content {
     margin: 1px 0 59px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .donation__content {
+    margin: 0 0 43px;
+    text-align: center;
   }
 }
 .donation__title {
@@ -454,6 +474,13 @@
   color: #545454;
   margin: 20px 0 29px;
 }
+@media screen and (max-width: 767px) {
+  .donation__subtitle {
+    letter-spacing: 0;
+    text-align: center;
+    margin: 23px 0 33px;
+  }
+}
 .donation__credit-card {
   background-image: url("../../assets/icons/icon-credit-card.svg");
   background-repeat: no-repeat;
@@ -472,8 +499,19 @@
   text-decoration: none;
   transition: background-color 0.3s;
 }
+@media screen and (max-width: 767px) {
+  .donation__credit-card {
+    font-size: 15px;
+    line-height: 110%;
+  }
+}
 .donation__credit-card:hover {
   background-color: #fddcc4;
+}
+@media screen and (max-width: 767px) {
+  .donation__credit-card {
+    padding: 13px 15px 13px 60px;
+  }
 }
 .donation__text {
   font-style: italic;
@@ -481,6 +519,12 @@
   line-height: 150%;
   color: #b2b2b2;
   margin: 28px 0 0;
+}
+@media screen and (max-width: 767px) {
+  .donation__text {
+    text-align: justify;
+    padding: 0 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

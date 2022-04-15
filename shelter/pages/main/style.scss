@@ -253,8 +253,6 @@
         margin-top: 22px;
 
         @media screen and (max-width: 767px) {
-            font-size: 15px;
-            line-height: 110%;
             margin-top: 14px;
         }
     }
@@ -274,12 +272,20 @@
             flex-wrap: wrap-reverse;
             max-width: 800px;
         }
+
+        @media screen and (max-width: 767px) {
+            padding: 40px 10px;
+        }
     }
 
     // .donation__img
 
     &__img {
         margin-top: 1px;
+
+        @media screen and (max-width: 767px) {
+            width: 260px;
+        }
     }
 
     // .donation__content
@@ -290,6 +296,11 @@
 
         @media screen and (max-width: 1279px) {
             margin: 1px 0 59px;
+        }
+
+        @media screen and (max-width: 767px) {
+            margin: 0 0 43px;
+            text-align: center;
         }
     }
 
@@ -309,6 +320,12 @@
         font-weight: normal;
         color: $color-dark-l;
         margin: 20px 0 29px;
+
+        @media screen and (max-width: 767px) {
+            letter-spacing: 0;
+            text-align: center;
+            margin: 23px 0 33px;
+        }
     }
 
     // .donation__credit-card
@@ -329,6 +346,10 @@
         &:hover {
             background-color: $color-primary-light;
         }
+
+        @media screen and (max-width: 767px) {
+            padding: 13px 15px 13px 60px;
+        }
     }
 
     // .donation__text
@@ -339,5 +360,10 @@
         line-height: 150%;
         color: $color-dark-m;
         margin: 28px 0 0;
+
+        @media screen and (max-width: 767px) {
+            text-align: justify;
+            padding: 0 10px;
+        }
     }
 }
