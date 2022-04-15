@@ -257,13 +257,17 @@
   transition: background-color 0.3s;
   border: 2px solid #f1cdb3;
   background-color: transparent;
-  order: 10;
 }
 .pets-slider__btn:hover {
   background-color: #fddcc4;
 }
 .pets-slider__btn:hover {
   border: none;
+}
+@media screen and (max-width: 767px) {
+  .pets-slider__btn {
+    order: 10;
+  }
 }
 .pets-slider__inner {
   gap: 90px;

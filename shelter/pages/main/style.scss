@@ -164,7 +164,10 @@
     &__btn {
         @include btn(52px);
         @include btn-add();
-        order: 10;
+
+        @media screen and (max-width: 767px) {
+            order: 10;
+        }
     }
 
     // .pets-slider__inner
