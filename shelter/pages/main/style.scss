@@ -153,12 +153,18 @@
         gap: 12px;
         justify-content: center;
     }
+    @media screen and (max-width: 767px) {
+        flex-wrap: wrap;
+        margin: 41px 0;
+        gap: 20px 80px;
+    }
 
     // .pets-slider__btn
 
     &__btn {
         @include btn(52px);
         @include btn-add();
+        order: 10;
     }
 
     // .pets-slider__inner
@@ -174,6 +180,12 @@
 
 .pets-item--3 {
     @media screen and (max-width: 1279px) {
+        display: none;
+    }
+}
+
+.pets-item--2 {
+    @media screen and (max-width: 767px) {
         display: none;
     }
 }

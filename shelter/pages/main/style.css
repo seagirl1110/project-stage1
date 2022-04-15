@@ -228,6 +228,13 @@
     justify-content: center;
   }
 }
+@media screen and (max-width: 767px) {
+  .pets-slider {
+    flex-wrap: wrap;
+    margin: 41px 0;
+    gap: 20px 80px;
+  }
+}
 .pets-slider__btn {
   width: 52px;
   height: 52px;
@@ -250,6 +257,7 @@
   transition: background-color 0.3s;
   border: 2px solid #f1cdb3;
   background-color: transparent;
+  order: 10;
 }
 .pets-slider__btn:hover {
   background-color: #fddcc4;
@@ -268,6 +276,12 @@
 
 @media screen and (max-width: 1279px) {
   .pets-item--3 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pets-item--2 {
     display: none;
   }
 }
