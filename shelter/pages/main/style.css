@@ -418,7 +418,6 @@
 @media screen and (max-width: 1279px) {
   .donation__container {
     flex-wrap: wrap-reverse;
-    max-width: 800px;
   }
 }
 @media screen and (max-width: 767px) {
