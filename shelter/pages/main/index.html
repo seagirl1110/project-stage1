@@ -20,7 +20,13 @@
                     <div class="logo__text">Shelter for pets in Boston</div>
                 </a>
             </div>
-            <nav class="header__nav nav">
+            <nav class="header__nav nav" data-js="nav">
+                <div class="header__logo logo">
+                    <a href="#" class="logo__link">
+                        <div class="logo__title">Cozy House</div>
+                        <div class="logo__text">Shelter for pets in Boston</div>
+                    </a>
+                </div>
                 <ul class="nav__menu menu">
                     <li class="menu__item menu__item--active"><a href="" class="menu__link">About the shelter</a></li>
                     <li class="menu__item"><a href="../pets/index.html" class="menu__link">Our pets</a></li>
@@ -28,10 +34,10 @@
                     <li class="menu__item"><a href="#footer" class="menu__link">Contacts</a></li>
                 </ul>
             </nav>
-            <div class="header__burger-menu burger-menu">
-                <div class="burger-menu__item"></div>
-                <div class="burger-menu__item"></div>
-                <div class="burger-menu__item"></div>
+            <div class="header__burger burger" data-js="burger">
+                <div class="burger__line"></div>
+                <div class="burger__line"></div>
+                <div class="burger__line"></div>
             </div>
         </div>
     </header>
@@ -199,6 +205,7 @@
             <img src="../../assets/images/footer-puppy.png" alt="puppy" class="footer__img" width="300" height="310">
         </div>
     </footer>
+    <script src="../../assets/scripts/app.js" type="module"></script>
 </body>
 
 </html>

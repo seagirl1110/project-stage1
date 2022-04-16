@@ -72,14 +72,23 @@ body {
     }
 }
 
-.menu {
-    margin: 0;
-    padding: 0;
-    @include flex();
+.nav {
 
     @media screen and (max-width: 767px) {
         display: none;
     }
+
+    // .nav--open
+
+    &--open {
+        display: block;
+    }
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    @include flex();
 
     // .menu__item
 
@@ -119,20 +128,27 @@ body {
     }
 }
 
-.burger-menu {
+.burger {
     display: none;
     height: 22px;
     flex-direction: column;
     justify-content: space-between;
     margin-right: 43px;
+    transition: all 0.3s;
 
     @media screen and (max-width: 767px) {
         display: flex;
     }
 
-    // .burger-menu__item
+    // .burger--open
 
-    &__item {
+    &--open {
+        transform: rotate(90deg);
+    }
+
+    // .burger__line
+
+    &__line {
         width: 30px;
         border: 1px solid $color-primary;
     }
