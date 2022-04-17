@@ -229,6 +229,7 @@ body {
 .menu__item {
   list-style: none;
   margin-left: 36px;
+  position: relative;
 }
 @media screen and (max-width: 767px) {
   .menu__item {
@@ -243,16 +244,30 @@ body {
 .menu__item--active {
   border-bottom: 2px solid #f1cdb3;
 }
-.menu__item--active .menu__link {
-  color: #fafafa;
-}
-.menu__item:hover .menu__link {
-  color: #fafafa;
-}
+
 .menu__link {
   text-decoration: none;
   color: #cdcdcd;
   transition: color 0.3s;
+}
+.menu__link::after {
+  content: "";
+  height: 2px;
+  background-color: #f1cdb3;
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: -2px;
+  transition: all 0.3s;
+  opacity: 0;
+}
+.menu__item--active .menu__link, .menu__item:hover .menu__link {
+  color: #fafafa;
+}
+.menu__item--active .menu__link::after, .menu__item:hover .menu__link::after {
+  opacity: 1;
+  left: 0;
+  right: 0;
 }
 
 .burger {

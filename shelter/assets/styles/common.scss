@@ -135,6 +135,7 @@ body {
     &__item {
         list-style: none;
         margin-left: 36px;
+        position: relative;
 
         @media screen and (max-width: 767px) {
             margin-bottom: 40px;
@@ -152,31 +153,44 @@ body {
 
         &--active {
             border-bottom: 2px solid $color-primary;
-
-            // .menu__item--active .menu__link
-
-            & .menu__link {
-                color: $color-light-s;
-            }
-        }
-
-        // .menu__item:hover
-
-        &:hover {
-            // .menu__item:hover .menu__link
-
-            & .menu__link {
-                color: $color-light-s;
-            }
         }
     }
+}
 
-    // .menu__link
+.menu__link {
+    text-decoration: none;
+    color: $color-dark-s;
+    transition: color 0.3s;
 
-    &__link {
-        text-decoration: none;
-        color: $color-dark-s;
-        transition: color 0.3s;
+    // .menu__link::after
+
+    &::after {
+        content: "";
+        height: 2px;
+        background-color: $color-primary;
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        bottom: -2px;
+        transition: all 0.3s;
+        opacity: 0;
+    }
+
+    // .menu__item--active .menu__link,
+    // .menu__item:hover .menu__link
+
+    .menu__item--active &,
+    .menu__item:hover & {
+        color: $color-light-s;
+
+        // .menu__item--active .menu__link::after,
+        // .menu__item:hover .menu__link
+
+        &::after {
+            opacity: 1;
+            left: 0;
+            right: 0;
+        }
     }
 }
 
