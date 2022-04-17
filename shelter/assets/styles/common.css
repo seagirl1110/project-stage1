@@ -241,9 +241,6 @@ body {
     margin-bottom: 0;
   }
 }
-.menu__item--active {
-  border-bottom: 2px solid #f1cdb3;
-}
 
 .menu__link {
   text-decoration: none;
