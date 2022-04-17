@@ -24,6 +24,12 @@
   color: #292929;
 }
 
+@media screen and (max-width: 767px) {
+  .nav {
+    background-color: #ffffff;
+  }
+}
+
 .menu__item--active .menu__link {
   color: #292929;
 }
@@ -34,7 +40,7 @@
   color: #545454;
 }
 
-.burger-menu__item {
+.burger__line {
   border: 1px solid #000000;
 }
 
