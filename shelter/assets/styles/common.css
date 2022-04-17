@@ -224,6 +224,7 @@ body {
     font-size: 32px;
     line-height: 160%;
     margin: auto 0;
+    overflow-y: scroll;
   }
 }
 .menu__item {
