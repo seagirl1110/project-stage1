@@ -15,9 +15,42 @@
   flex-wrap: wrap;
   padding: 60px 40px 0;
 }
+@media screen and (max-width: 1279px) {
+  .start-screen__container {
+    max-width: 768px;
+    padding: 80px 30px 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .start-screen__container {
+    max-width: 320px;
+    padding: 42px 10px;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .start-screen__container {
+    padding: 60px 30px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .start-screen__container {
+    padding: 60px 10px 1px;
+  }
+}
 .start-screen__content {
   max-width: 460px;
   margin-bottom: 80px;
+}
+@media screen and (max-width: 1279px) {
+  .start-screen__content {
+    margin: 0 auto 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .start-screen__content {
+    margin: 0 auto 105px;
+    text-align: center;
+  }
 }
 .start-screen__title {
   font-family: "Georgia", "Century Schoolbook L", serif;
@@ -26,6 +59,12 @@
   font-weight: normal;
   color: #ffffff;
   margin: 0 0 42px;
+}
+@media screen and (max-width: 767px) {
+  .start-screen__title {
+    font-size: 25px;
+    letter-spacing: 0.06em;
+  }
 }
 .start-screen__text {
   margin: 0 0 41px;
@@ -54,6 +93,23 @@
 .start-screen__button:hover {
   background-color: #fddcc4;
 }
+@media screen and (max-width: 1279px) {
+  .start-screen__button {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .start-screen__img {
+    margin-left: auto;
+    width: 569px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .start-screen__img {
+    margin-left: auto;
+    width: 260px;
+  }
+}
 
 .about {
   width: 100%;
@@ -68,9 +124,36 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap: 79px 120px;
+}
+@media screen and (max-width: 1279px) {
+  .about__container {
+    max-width: 768px;
+    padding: 80px 30px 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about__container {
+    max-width: 320px;
+    padding: 42px 10px;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .about__container {
+    flex-wrap: wrap-reverse;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about__container {
+    gap: 18px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about__img {
+    width: 260px;
+  }
 }
 .about__content {
-  margin-left: 120px;
   max-width: 430px;
 }
 .about__title {
@@ -83,9 +166,27 @@
   margin: 0;
   text-align: left;
 }
+@media screen and (max-width: 767px) {
+  .about__title {
+    font-size: 25px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about__title {
+    margin-bottom: 25px;
+  }
+}
 .about__text {
   margin: 25px 0 0;
   color: #4c4c4c;
+}
+@media screen and (max-width: 767px) {
+  .about__text {
+    text-align: justify;
+    max-width: 270px;
+    margin: 22px auto;
+  }
 }
 
 .pets__btn {
@@ -119,6 +220,20 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  flex-wrap: nowrap;
+}
+@media screen and (max-width: 1279px) {
+  .pets-slider {
+    gap: 12px;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pets-slider {
+    flex-wrap: wrap;
+    margin: 41px 0;
+    gap: 20px 80px;
+  }
 }
 .pets-slider__btn {
   width: 52px;
@@ -149,8 +264,30 @@
 .pets-slider__btn:hover {
   border: none;
 }
+@media screen and (max-width: 767px) {
+  .pets-slider__btn {
+    order: 10;
+  }
+}
 .pets-slider__inner {
   gap: 90px;
+}
+@media screen and (max-width: 1279px) {
+  .pets-slider__inner {
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .pets-item--3 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pets-item--2 {
+    display: none;
+  }
 }
 
 .help {
@@ -163,6 +300,18 @@
   padding: 80px 40px 100px;
   margin: 0 auto;
 }
+@media screen and (max-width: 1279px) {
+  .help__container {
+    max-width: 768px;
+    padding: 80px 30px 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .help__container {
+    max-width: 320px;
+    padding: 42px 10px;
+  }
+}
 .help__title {
   font-family: "Georgia", "Century Schoolbook L", serif;
   font-weight: normal;
@@ -173,6 +322,12 @@
   margin: 0;
   text-align: center;
 }
+@media screen and (max-width: 767px) {
+  .help__title {
+    font-size: 25px;
+    text-align: center;
+  }
+}
 .help__list {
   margin: 60px 0 0;
   display: flex;
@@ -181,9 +336,39 @@
   flex-wrap: wrap;
   gap: 55px 120px;
 }
+@media screen and (max-width: 1279px) {
+  .help__list {
+    width: 630px;
+    margin: 60px auto 0;
+    column-gap: 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .help__list {
+    width: 290px;
+    margin: 42px auto 0;
+    gap: 30px;
+    justify-content: start;
+  }
+}
 
 .help-item {
   text-align: center;
+}
+@media screen and (max-width: 1279px) {
+  .help-item {
+    width: 170px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .help-item {
+    width: 130px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .help-item__icon {
+    width: 50px;
+  }
 }
 .help-item__title {
   font-family: "Georgia", "Century Schoolbook L", serif;
@@ -195,6 +380,13 @@
   margin: 30px 0 0;
   text-align: center;
   margin-top: 22px;
+}
+@media screen and (max-width: 767px) {
+  .help-item__title {
+    margin-top: 14px;
+    font-size: 15px;
+    line-height: 110%;
+  }
 }
 
 .donation {
@@ -211,12 +403,50 @@
   align-items: center;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 1279px) {
+  .donation__container {
+    max-width: 768px;
+    padding: 80px 30px 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .donation__container {
+    max-width: 320px;
+    padding: 42px 10px;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .donation__container {
+    flex-wrap: wrap-reverse;
+  }
+}
+@media screen and (max-width: 767px) {
+  .donation__container {
+    padding: 40px 10px 42px;
+  }
+}
 .donation__img {
   margin-top: 1px;
+}
+@media screen and (max-width: 767px) {
+  .donation__img {
+    width: 260px;
+  }
 }
 .donation__content {
   margin-left: 30px;
   max-width: 380px;
+}
+@media screen and (max-width: 1279px) {
+  .donation__content {
+    margin: 1px 0 59px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .donation__content {
+    margin: 0 0 43px;
+    text-align: center;
+  }
 }
 .donation__title {
   font-family: "Georgia", "Century Schoolbook L", serif;
@@ -228,6 +458,12 @@
   margin: 0;
   text-align: left;
 }
+@media screen and (max-width: 767px) {
+  .donation__title {
+    font-size: 25px;
+    text-align: center;
+  }
+}
 .donation__subtitle {
   font-family: "Georgia", "Century Schoolbook L", serif;
   font-size: 15px;
@@ -236,6 +472,13 @@
   font-weight: normal;
   color: #545454;
   margin: 20px 0 29px;
+}
+@media screen and (max-width: 767px) {
+  .donation__subtitle {
+    letter-spacing: 0;
+    text-align: center;
+    margin: 23px 0 33px;
+  }
 }
 .donation__credit-card {
   background-image: url("../../assets/icons/icon-credit-card.svg");
@@ -258,12 +501,25 @@
 .donation__credit-card:hover {
   background-color: #fddcc4;
 }
+@media screen and (max-width: 767px) {
+  .donation__credit-card {
+    padding: 13px 15px 13px 60px;
+    font-size: 15px;
+    line-height: 110%;
+  }
+}
 .donation__text {
   font-style: italic;
   font-size: 12px;
   line-height: 150%;
   color: #b2b2b2;
   margin: 28px 0 0;
+}
+@media screen and (max-width: 767px) {
+  .donation__text {
+    text-align: justify;
+    padding: 0 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

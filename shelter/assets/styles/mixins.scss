@@ -3,6 +3,14 @@
     max-width: 1280px;
     padding: 80px 40px 100px;
     margin: 0 auto;
+    @media screen and (max-width: 1279px) {
+        max-width: 768px;
+        padding: 80px 30px 100px;    
+    }
+    @media screen and (max-width: 767px) {
+        max-width: 320px;
+        padding: 42px 10px;    
+    }
 }
 
 @mixin flex($align: space-between) {
@@ -53,6 +61,11 @@
     color: $color-dark-l;
     margin: 0;
     text-align: $align;
+
+    @media screen and (max-width: 767px) {
+        font-size: 25px;
+        text-align: center;
+    }
 }
 
 @mixin item-title($margin-bottom: 30px) {
