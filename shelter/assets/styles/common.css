@@ -145,6 +145,7 @@ body {
 @media screen and (max-width: 767px) {
   .header__container {
     padding: 30px 10px 0;
+    max-width: 767px;
   }
 }
 
@@ -193,13 +194,15 @@ body {
 @media screen and (max-width: 767px) {
   .nav {
     background-color: #292929;
-    width: 320px;
+    max-width: 320px;
     height: 100vh;
     visibility: hidden;
     position: fixed;
     top: 0;
     right: -100%;
     transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
   }
 }
 .nav--open {
@@ -220,6 +223,7 @@ body {
   .menu {
     font-size: 32px;
     line-height: 160%;
+    margin: auto 0;
   }
 }
 .menu__item {
@@ -229,6 +233,11 @@ body {
 @media screen and (max-width: 767px) {
   .menu__item {
     margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .menu__item:last-child {
+    margin-bottom: 0;
   }
 }
 .menu__item--active {
