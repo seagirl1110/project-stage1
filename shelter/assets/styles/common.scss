@@ -145,6 +145,7 @@ body {
         // .menu__item:last-child
 
         &:last-child {
+            
             @media screen and (max-width: 767px) {
                 margin-bottom: 0;
             }
