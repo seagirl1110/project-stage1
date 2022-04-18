@@ -452,6 +452,13 @@ body {
     margin: 0;
   }
 }
+@media screen and (max-width: 767px) {
+  .footer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .footer__title {
   font-family: "Georgia", "Century Schoolbook L", serif;
   font-weight: normal;
@@ -473,7 +480,8 @@ body {
 @media screen and (max-width: 767px) {
   .footer__title {
     width: 294px;
-    padding-left: 5px;
+    padding-left: 2px;
+    margin-bottom: 0;
   }
 }
 .footer__email {
@@ -493,7 +501,9 @@ body {
 }
 @media screen and (max-width: 767px) {
   .footer__email {
-    margin-left: 25px;
+    margin: 35px 0 32px;
+    padding-left: 64px;
+    background-position: 5px 4px;
   }
 }
 .footer__phone {
@@ -512,7 +522,8 @@ body {
 }
 @media screen and (max-width: 767px) {
   .footer__phone {
-    margin-left: 30px;
+    padding-left: 64px;
+    background-position: 5px 4px;
   }
 }
 .footer__locations {
@@ -529,11 +540,12 @@ body {
   align-items: center;
   padding-left: 40px;
   min-height: 40px;
-  background-position: 0px 5px;
+  background-position: 0px 6px;
 }
 @media screen and (max-width: 767px) {
   .footer__locations {
-    margin: 37px 0 0;
+    margin: 38px 0 0;
+    align-self: flex-start;
   }
 }
 .footer__img {
