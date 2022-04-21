@@ -567,4 +567,75 @@ body {
   }
 }
 
+.popup {
+  display: none;
+  background: rgba(41, 41, 41, 0.6);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+}
+.popup--open {
+  display: flex;
+}
+.popup__btn {
+  position: absolute;
+}
+
+.pet {
+  width: 900px;
+  height: 500px;
+  background-color: #fafafa;
+  border-radius: 9px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.pet:hover {
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+}
+.pet__content {
+  width: 351px;
+  margin: 50px 20px 0 29px;
+  font-family: "Georgia", "Century Schoolbook L", serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+.pet__name {
+  font-size: 35px;
+  line-height: 130%;
+  margin: 0 0 10px;
+  font-weight: normal;
+}
+.pet__type-wrapper {
+  font-size: 20px;
+  line-height: 115%;
+  font-weight: normal;
+  margin: 0;
+}
+.pet__text {
+  font-size: 15px;
+  line-height: 110%;
+  margin: 40px 0;
+}
+.pet__characteristics {
+  margin: 0;
+  padding: 0;
+}
+
+.pet-item {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 110%;
+  list-style: none;
+}
+.pet-item__value {
+  font-weight: 400;
+}
+
 /*# sourceMappingURL=common.css.map */
