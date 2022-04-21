@@ -577,9 +577,16 @@ body {
   height: 100vh;
   position: fixed;
   top: 0;
+  cursor: pointer;
 }
 .popup--open {
   display: flex;
+}
+.popup__container {
+  position: relative;
+  width: 900px;
+  height: 500px;
+  cursor: initial;
 }
 .popup__btn {
   width: 52px;
@@ -616,8 +623,6 @@ body {
 }
 
 .pet {
-  width: 900px;
-  height: 500px;
   background-color: #fafafa;
   border-radius: 9px;
   display: flex;
@@ -625,7 +630,6 @@ body {
   align-items: center;
   flex-wrap: wrap;
   align-items: flex-start;
-  position: relative;
 }
 .pet:hover {
   box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);

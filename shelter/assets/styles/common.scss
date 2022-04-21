@@ -410,11 +410,21 @@ body {
     height: 100vh;
     position: fixed;
     top: 0;
+    cursor: pointer;
 
     // .popup--open
 
     &--open {
         display: flex;
+    }
+
+    // .popup__container
+
+    &__container {
+        position: relative;
+        width: 900px;
+        height: 500px;
+        cursor: initial;
     }
 
     // .popup__btn
@@ -430,13 +440,10 @@ body {
 }
 
 .pet {
-    width: 900px;
-    height: 500px;
     background-color: $color-light-s;
     border-radius: 9px;
     @include flex();
     align-items: flex-start;
-    position: relative;
 
     // .pet:hover
 
