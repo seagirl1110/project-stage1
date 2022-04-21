@@ -1,10 +1,13 @@
 import pets from './pets.json' assert { type: 'json' };
 
-// burger-menu
 const body = document.body;
 const burger = body.querySelector('[data-js="burger"]');
 const nav = body.querySelector('[data-js="nav"]');
 const overlay = body.querySelector('[data-js="overlay"]');
+const petsContainer = body.querySelector('[data-js="pets-container"]');
+const popup = body.querySelector('[data-js="popup"]');
+
+// burger-menu
 
 burger.addEventListener('click', toggleMenu);
 
@@ -28,23 +31,42 @@ function closeMenu() {
     body.classList.remove('body--overflow');
 }
 
+// render card
 
-// popup
+pets.forEach(pet => {
+    const card = renderCard(pet);
+    petsContainer.appendChild(card);
+    card.addEventListener('click', openPopup(pet));
+})
 
-const popup = body.querySelector('[data-js="popup"]');
-const petCards = body.querySelectorAll('[data-js="pet-card"]');
-
-if (petCards) {
-    petCards.forEach(item => {
-        item.addEventListener('click', (item) => {
-            const petName = item
-            openPopup()
-        })
-    })
+function renderCard(pet) {
+    const card = document.createElement('article');
+    card.classList.add('pets-slider__item', 'pets-item');
+    card.innerHTML = `<img src="${pet.img}" alt="pet" class="pets-item__img" width="270" height="270">
+                    <h4 class="pets-item__title">${pet.name}</h4>
+                    <button class="pets-item__btn">Learn more</button>`
+    return card;
 }
 
 
-function openPopup() {
+
+// popup
+
+function openPopup(pet) {
+    createPopup(pet);
     popup.classList.add('popup--open');
     body.classList.add('body--overflow');
+}
+
+function createPopup(pet) {
+    const img = popup.querySelector('[data-pet="img"]');
+    const name = popup.querySelector('[data-pet="name"]');
+    name.textContent = pet.name;
+    const type = popup.querySelector('[data-pet="type"]');
+    const breed = popup.querySelector('[data-pet="breed"]');
+    const description = popup.querySelector('[data-pet="description"]');
+    const age = popup.querySelector('[data-pet="age"]');
+    const inoculations = popup.querySelector('[data-pet="inoculations"]');
+    const diseases = popup.querySelector('[data-pet="diseases"]');
+    const parasites = popup.querySelector('[data-pet="parasites"]');
 }

@@ -248,6 +248,7 @@ body {
 
     &__inner {
         @include flex();
+        max-width: 990px;
     }
 }
 
@@ -466,9 +467,9 @@ body {
         margin: 0;
     }
 
-    // .pet__text
+    // .pet__description
 
-    &__text {
+    &__description {
         font-size: 15px;
         line-height: 110%;
         margin: 40px 0;

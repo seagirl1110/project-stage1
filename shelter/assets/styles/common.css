@@ -341,6 +341,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  max-width: 990px;
 }
 
 .pets-item {
@@ -618,7 +619,7 @@ body {
   font-weight: normal;
   margin: 0;
 }
-.pet__text {
+.pet__description {
   font-size: 15px;
   line-height: 110%;
   margin: 40px 0;
