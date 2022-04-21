@@ -582,7 +582,37 @@ body {
   display: flex;
 }
 .popup__btn {
+  width: 52px;
+  height: 52px;
+  background-color: #f1cdb3;
+  color: #292929;
+  font-family: "Georgia", "Century Schoolbook L", serif;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  border-radius: 100px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: background-color 0.3s;
+  border: 2px solid #f1cdb3;
+  background-color: transparent;
   position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(80%, -100%);
+}
+.popup__btn:hover {
+  background-color: #fddcc4;
+}
+.popup__btn:hover {
+  border: none;
 }
 
 .pet {
@@ -594,6 +624,8 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  align-items: flex-start;
+  position: relative;
 }
 .pet:hover {
   box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
@@ -615,16 +647,18 @@ body {
   line-height: 130%;
   margin: 0 0 10px;
   font-weight: normal;
+  letter-spacing: 0.06em;
 }
 .pet__type-wrapper {
   font-size: 20px;
   line-height: 115%;
   font-weight: normal;
+  letter-spacing: 0.06em;
   margin: 0;
 }
 .pet__description {
   font-size: 15px;
-  line-height: 110%;
+  line-height: 113%;
   margin: 40px 0;
 }
 .pet__characteristics {
@@ -637,8 +671,9 @@ body {
   font-size: 15px;
   line-height: 110%;
   list-style: none;
-  padding-left: 10px;
+  padding-left: 15px;
   position: relative;
+  margin-top: 12px;
 }
 .pet-item::before {
   content: "";

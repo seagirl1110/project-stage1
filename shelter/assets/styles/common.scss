@@ -420,7 +420,12 @@ body {
     // .popup__btn
 
     &__btn {
+        @include btn(52px);
+        @include btn-add;
         position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(80%, -100%);
     }
 }
 
@@ -430,6 +435,8 @@ body {
     background-color: $color-light-s;
     border-radius: 9px;
     @include flex();
+    align-items: flex-start;
+    position: relative;
 
     // .pet:hover
 
@@ -462,6 +469,7 @@ body {
         line-height: 130%;
         margin: 0 0 10px;
         font-weight: normal;
+        letter-spacing: 0.06em;
     }
 
     // .pet__type-wrapper
@@ -470,6 +478,7 @@ body {
         font-size: 20px;
         line-height: 115%;
         font-weight: normal;
+        letter-spacing: 0.06em;
         margin: 0;
     }
 
@@ -477,7 +486,7 @@ body {
 
     &__description {
         font-size: 15px;
-        line-height: 110%;
+        line-height: 113%;
         margin: 40px 0;
     }
 
@@ -493,8 +502,9 @@ body {
     font-size: 15px;
     line-height: 110%;
     list-style: none;
-    padding-left: 10px;
+    padding-left: 15px;
     position: relative;
+    margin-top: 12px;
 
     // .pet-item::before
     &::before {
