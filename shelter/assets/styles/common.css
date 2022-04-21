@@ -110,6 +110,10 @@ body {
   color: #cdcdcd;
 }
 
+.body--overflow {
+  overflow: hidden;
+}
+
 .header {
   width: 100%;
   background: url("../../assets/images/bg-noise-transparent.png"), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
@@ -184,6 +188,7 @@ body {
 .nav .logo {
   display: none;
   padding: 30px 0 0 10px;
+  max-width: 210px;
 }
 @media screen and (max-width: 767px) {
   .nav .logo {
@@ -200,7 +205,7 @@ body {
     position: fixed;
     top: 0;
     right: -100%;
-    transition: all 0.3s;
+    transition: all 0.5s;
     display: flex;
     flex-direction: column;
   }
@@ -274,7 +279,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   margin-right: 43px;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 @media screen and (max-width: 767px) {
   .burger {

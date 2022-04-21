@@ -22,6 +22,10 @@ body {
     color: $color-dark-s;
 }
 
+.body--overflow {
+    overflow: hidden;
+}
+
 .header {
     width: 100%;
     background: $bg-color-dark;
@@ -89,6 +93,7 @@ body {
     .nav & {
         display: none;
         padding: 30px 0 0 10px;
+        max-width: 210px;
 
         @media screen and (max-width: 767px) {
             display: block;
@@ -105,7 +110,7 @@ body {
         position: fixed;
         top: 0;
         right: -100%;
-        transition: all 0.3s;
+        transition: all 0.5s;
         display: flex;
         flex-direction: column;
     }
@@ -195,7 +200,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     margin-right: 43px;
-    transition: all 0.3s;
+    transition: all 0.5s;
 
     @media screen and (max-width: 767px) {
         display: flex;
