@@ -101,6 +101,7 @@
 
     &__inner {
         gap: 30px 40px;
+        max-width: 100%;
 
         @media screen and (max-width: 1279px) {
             justify-content: center;
