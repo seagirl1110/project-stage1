@@ -598,6 +598,9 @@ body {
 .pet:hover {
   box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
+.pet__img {
+  border-radius: 9px 0 0 9px;
+}
 .pet__content {
   width: 351px;
   margin: 50px 20px 0 29px;

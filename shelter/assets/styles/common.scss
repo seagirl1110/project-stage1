@@ -437,6 +437,12 @@ body {
         box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
     }
 
+    // .pet__img
+
+    &__img {
+        border-radius: 9px 0 0 9px;
+    }
+
     // .pet__content
 
     &__content {
