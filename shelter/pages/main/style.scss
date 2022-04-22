@@ -181,8 +181,10 @@
 
     &__inner {
         display: flex;
+        gap: 90px;
         position: relative;
-        left: -990px;
+        left: -1080px;
+
     }
 
     // .pets-slider__block
@@ -198,8 +200,8 @@
 }
 
 @keyframes move-right {
-    from {left: -990px;}
-    to {left: -1980px;}
+    from {left: -1080px;}
+    to {left: -2160px;}
   }
   
   .transition-right {
@@ -208,7 +210,7 @@
   }
   
   @keyframes move-left {
-    from {left: -990px;}
+    from {left: -1080px;}
     to {left: 0px;}
   }
   

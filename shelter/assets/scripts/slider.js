@@ -1,17 +1,43 @@
 import pets from './pets.json' assert { type: 'json' };
 import { renderCard } from './card.js';
 
-const sliderWrapper = document.querySelector('[data-slider="wrapper"]');
 const btnLeft = document.querySelector('[data-slider="btn-left"]');
 const btnRight = document.querySelector('[data-slider="btn-right"]');
-
-const cards = [];
-pets.forEach(pet => {
-    const card = renderCard(pet);
-    cards.push(card);
-});
+const carousel = document.querySelector('[data-slider="carousel"]')
+const leftBlock = carousel.querySelector('[data-slider="block-left"]');
+const activeBlock = carousel.querySelector('[data-slider="block-active"]');
+const rightBlock = carousel.querySelector('[data-slider="block-right"]');
 
 createSlider();
+
+btnLeft.addEventListener('click', moveLeft);
+btnRight.addEventListener('click', moveRight);
+
+function moveLeft() {
+    carousel.classList.add('transition-left');
+    btnLeft.removeEventListener('click', moveLeft);
+    btnRight.removeEventListener('click', moveRight);
+}
+
+function moveRight() {
+    carousel.classList.add('transition-right');
+    btnLeft.removeEventListener('click', moveLeft);
+    btnRight.removeEventListener('click', moveRight);
+}
+
+carousel.addEventListener("animationend", (animationEvent) => {
+    if (animationEvent.animationName === "move-left") {
+        carousel.classList.remove("transition-left");
+        activeBlock.innerHTML = leftBlock.innerHTML;
+    } else {
+        carousel.classList.remove("transition-right");
+        activeBlock.innerHTML = rightBlock.innerHTML;
+    }
+
+    btnLeft.addEventListener('click', moveLeft);
+    btnRight.addEventListener('click', moveRight);
+})
+
 function createSlider() {
     const leftColl = [];
     const activeColl = [];
@@ -38,18 +64,9 @@ function createSlider() {
         };
     }
 
-    const sliderInner = document.createElement('div');
-    sliderInner.classList.add('pets-slider__inner');
-    sliderInner.innerHTML = `<div class="pets-slider__block pets-slider__block--left"></div>
-    <div class="pets-slider__block pets-slider__block--active"></div>
-    <div class="pets-slider__block pets-slider__block--right"></div>`;
-    const leftBlock = sliderInner.querySelector('.pets-slider__block--left');
-    const activeBlock = sliderInner.querySelector('.pets-slider__block--active');
-    const rightBlock = sliderInner.querySelector('.pets-slider__block--right');
     for (let i = 0; i < 3; i += 1) {
         leftBlock.appendChild(renderCard(leftColl[i]));
         activeBlock.appendChild(renderCard(activeColl[i]));
         rightBlock.appendChild(renderCard(rightColl[i]));
     }
-    sliderWrapper.appendChild(sliderInner);
 }
