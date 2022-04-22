@@ -8,7 +8,11 @@ const leftBlock = carousel.querySelector('[data-slider="block-left"]');
 const activeBlock = carousel.querySelector('[data-slider="block-active"]');
 const rightBlock = carousel.querySelector('[data-slider="block-right"]');
 
-createSlider();
+let activeColl;
+let leftColl;
+let rightColl;
+
+fillActiveBlock();
 
 btnLeft.addEventListener('click', moveLeft);
 btnRight.addEventListener('click', moveRight);
@@ -29,26 +33,38 @@ carousel.addEventListener("animationend", (animationEvent) => {
     if (animationEvent.animationName === "move-left") {
         carousel.classList.remove("transition-left");
         activeBlock.innerHTML = leftBlock.innerHTML;
+        activeColl = leftColl;
+        fillSideBlock(activeColl);
     } else {
         carousel.classList.remove("transition-right");
         activeBlock.innerHTML = rightBlock.innerHTML;
+        activeColl = rightColl;
+        fillSideBlock(activeColl);
     }
 
     btnLeft.addEventListener('click', moveLeft);
     btnRight.addEventListener('click', moveRight);
 })
 
-function createSlider() {
-    const leftColl = [];
-    const activeColl = [];
-    const rightColl = [];
-
+function fillActiveBlock() {
+    activeColl = [];
     while (activeColl.length !== 3) {
         const item = pets[Math.floor(Math.random() * 8)];
         if (!activeColl.includes(item)) {
             activeColl.push(item);
         }
     }
+    for (let i = 0; i < 3; i += 1) {
+        activeBlock.appendChild(renderCard(activeColl[i]));
+    }
+    fillSideBlock(activeColl);
+}
+
+function fillSideBlock(activeColl) {
+    leftColl = [];
+    rightColl = [];
+    leftBlock.innerHTML = "";
+    rightBlock.innerHTML = "";
 
     while (leftColl.length !== 3) {
         const item = pets[Math.floor(Math.random() * 8)];
@@ -66,7 +82,6 @@ function createSlider() {
 
     for (let i = 0; i < 3; i += 1) {
         leftBlock.appendChild(renderCard(leftColl[i]));
-        activeBlock.appendChild(renderCard(activeColl[i]));
         rightBlock.appendChild(renderCard(rightColl[i]));
     }
 }
