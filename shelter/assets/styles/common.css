@@ -616,8 +616,17 @@ body {
     transform: translate(58%, -100%);
   }
 }
+.popup:hover .popup__btn {
+  background-color: #fddcc4;
+  border: none;
+}
+.popup__pet:hover + .popup__btn {
+  border: 2px solid #f1cdb3;
+  background-color: transparent;
+}
 
 .pet {
+  position: relative;
   background-color: #fafafa;
   border-radius: 9px;
   display: flex;
@@ -627,7 +636,8 @@ body {
   align-items: flex-start;
   width: 900px;
   min-height: 500px;
-  cursor: initial;
+  z-index: 100;
+  cursor: auto;
 }
 @media screen and (max-width: 1279px) {
   .pet {
