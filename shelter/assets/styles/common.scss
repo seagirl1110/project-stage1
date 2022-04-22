@@ -423,9 +423,6 @@ body {
 
     &__container {
         position: relative;
-        width: 900px;
-        height: 500px;
-        cursor: initial;
     }
 
     // .popup__btn
@@ -437,6 +434,10 @@ body {
         top: 0;
         right: 0;
         transform: translate(80%, -100%);
+
+        @media screen and (max-width: 767px) {
+            transform: translate(58%, -100%);
+        }
     }
 }
 
@@ -445,6 +446,19 @@ body {
     border-radius: 9px;
     @include flex();
     align-items: flex-start;
+    width: 900px;
+    height: 500px;
+    cursor: initial;
+
+    @media screen and (max-width: 1279px) {
+        width: 630px;
+        height: 350px;
+    }
+
+    @media screen and (max-width: 767px) {
+        width: 240px;
+        height: 341px;
+    }
 
     // .pet:hover
 
@@ -456,6 +470,15 @@ body {
 
     &__img {
         border-radius: 9px 0 0 9px;
+
+        @media screen and (max-width: 1279px) {
+            width: 350px;
+            height: 350px;
+        }
+
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
     }
 
     // .pet__content
@@ -468,6 +491,11 @@ body {
         font-weight: normal;
         letter-spacing: 0.06em;
         color: #000000;
+
+        @media screen and (max-width: 1279px) {
+            width: 260px;
+            margin: 10px 7px 0 9px;
+        }
     }
 
     // .pet__name
@@ -478,6 +506,10 @@ body {
         margin: 0 0 10px;
         font-weight: normal;
         letter-spacing: 0.06em;
+
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
     }
 
     // .pet__type-wrapper
@@ -488,6 +520,10 @@ body {
         font-weight: normal;
         letter-spacing: 0.06em;
         margin: 0;
+
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
     }
 
     // .pet__description
@@ -496,6 +532,21 @@ body {
         font-size: 15px;
         line-height: 113%;
         margin: 40px 0;
+
+        @media screen and (max-width: 1279px) {
+            font-size: 13px;
+            line-height: 111%;
+            margin: 20px 0 17px;
+            letter-spacing: 0.05em;
+        }
+
+        @media screen and (max-width: 767px) {
+            @media screen and (max-width: 767px) {
+                text-align: center;
+                margin: 20px 5px 17px 0;
+                margin: 20px 0 23px;
+            }
+        }
     }
 
     // .pet__characteristics
@@ -514,6 +565,16 @@ body {
     position: relative;
     margin-top: 12px;
 
+    @media screen and (max-width: 1279px) {
+        margin-top: 7px;
+        padding-left: 12px;
+    }
+
+    @media screen and (max-width: 767px) {
+        margin-top: 6px;
+        padding-left: 16px;
+    }
+
     // .pet-item::before
     &::before {
         content: "";
@@ -525,6 +586,14 @@ body {
         position: absolute;
         left: 0;
         top: 5px;
+
+        @media screen and (max-width: 1279px) {
+            left: -2px;
+        }
+
+        @media screen and (max-width: 767px) {
+            left: 2px;
+        }
     }
 
     // .pet-item__value
