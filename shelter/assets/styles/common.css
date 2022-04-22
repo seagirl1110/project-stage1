@@ -337,14 +337,6 @@ body {
   margin: 60px 0;
 }
 
-.pets-slider__inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 990px;
-}
-
 .pets-item {
   display: flex;
   justify-content: space-between;

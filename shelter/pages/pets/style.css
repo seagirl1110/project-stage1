@@ -68,15 +68,6 @@
     margin: 41px 0 0;
   }
 }
-.pets-slider__inner {
-  gap: 30px 40px;
-  max-width: 100%;
-}
-@media screen and (max-width: 1279px) {
-  .pets-slider__inner {
-    justify-content: center;
-  }
-}
 .pets-slider__pagination-btns {
   margin-top: 59px;
   display: flex;

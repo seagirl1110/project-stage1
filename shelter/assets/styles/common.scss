@@ -244,15 +244,6 @@ body {
     }
 }
 
-.pets-slider {
-    // .pets-slider__inner
-
-    &__inner {
-        @include flex();
-        max-width: 990px;
-    }
-}
-
 .pets-item {
     @include flex();
     flex-direction: column;
