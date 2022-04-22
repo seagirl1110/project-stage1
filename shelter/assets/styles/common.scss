@@ -447,17 +447,17 @@ body {
     @include flex();
     align-items: flex-start;
     width: 900px;
-    height: 500px;
+    min-height: 500px;
     cursor: initial;
 
     @media screen and (max-width: 1279px) {
         width: 630px;
-        height: 350px;
+        min-height: 350px;
     }
 
     @media screen and (max-width: 767px) {
         width: 240px;
-        height: 341px;
+        min-height: 341px;
     }
 
     // .pet:hover
@@ -473,7 +473,6 @@ body {
 
         @media screen and (max-width: 1279px) {
             width: 350px;
-            height: 350px;
         }
 
         @media screen and (max-width: 767px) {
@@ -542,7 +541,7 @@ body {
 
         @media screen and (max-width: 767px) {
             @media screen and (max-width: 767px) {
-                text-align: center;
+                text-align: justify;
                 margin: 20px 5px 17px 0;
                 margin: 20px 0 23px;
             }
@@ -553,6 +552,7 @@ body {
     &__characteristics {
         margin: 0;
         padding: 0;
+        padding-bottom: 2px;
     }
 }
 
