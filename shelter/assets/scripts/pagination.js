@@ -8,9 +8,12 @@ const btnPrev = document.querySelector('[data-pagination="btn-prev"]');
 const btnNext = document.querySelector('[data-pagination="btn-next"]');
 const btnFinish = document.querySelector('[data-pagination="btn-finish"]');
 
-let count = 0;
-
-let petsColl = [];
+let countCard = 8;
+if (window.innerWidth < 768) {
+    countCard = 3;
+} else if (window.innerWidth < 1280) {
+    countCard = 6;
+}
 
 const coll = [];
 while (coll.length < 48) {
@@ -67,56 +70,43 @@ while (coll.length < 48) {
     }
 }
 
-for (let i = 0; i < 48; i += 8) {
-    const item = coll.slice(i, i + 8);
+const petsColl = [];
+for (let i = 0; i < 48; i += countCard) {
+    const item = coll.slice(i, i + countCard);
     petsColl.push(item);
 }
 
-console.log(petsColl)
+let countPage = 0;
 
-if (window.innerWidth < 768) {
-    petsColl = [];
-
-} else if (window.innerWidth < 1280) {
-    petsColl = [];
-
-}
-
-renderPage(count);
+renderPage(countPage);
 
 btnStart.addEventListener('click', () => {
-    count = 0;
-    renderPage(count);
+    countPage = 0;
+    renderPage(countPage);
 })
 
 btnPrev.addEventListener('click', () => {
-    count -= 1;
-    renderPage(count);
+    countPage -= 1;
+    renderPage(countPage);
 })
 
 btnNext.addEventListener('click', () => {
-    count += 1;
-    renderPage(count);
+    countPage += 1;
+    renderPage(countPage);
 })
 
 btnFinish.addEventListener('click', () => {
-    count = petsColl.length - 1;
-    renderPage(count);
+    countPage = petsColl.length - 1;
+    renderPage(countPage);
 })
 
-function shuffle(array) {
-    const result = [...array];
-    result.sort(() => Math.random() - 0.5);
-    return result;
-}
-
-function renderPage(count) {
-    if (count === 0) {
+function renderPage(countPage) {
+    if (countPage === 0) {
         btnStart.setAttribute("disabled", "disabled");
         btnPrev.setAttribute("disabled", "disabled");
         btnNext.removeAttribute("disabled", "disabled");
         btnFinish.removeAttribute("disabled", "disabled");
-    } else if (count === petsColl.length - 1) {
+    } else if (countPage === petsColl.length - 1) {
         btnStart.removeAttribute("disabled", "disabled");
         btnPrev.removeAttribute("disabled", "disabled");
         btnNext.setAttribute("disabled", "disabled");
@@ -128,10 +118,12 @@ function renderPage(count) {
         btnFinish.removeAttribute("disabled", "disabled");
     }
     page.innerHTML = "";
-    const arr = petsColl[count];
+    const arr = petsColl[countPage];
     for (let i = 0; i < arr.length; i += 1) {
         const card = renderCard(arr[i]);
         page.appendChild(card)
     }
-    pageNum.innerHTML = `${count + 1}`;
+    pageNum.innerHTML = `${countPage + 1}`;
 }
+console.log(coll);
+console.log(petsColl)
