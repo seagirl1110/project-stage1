@@ -122,6 +122,7 @@
   transition: background-color 0.3s;
   border: 2px solid #f1cdb3;
   background-color: transparent;
+  fill: #292929;
 }
 .pets-slider__pagination:hover {
   background-color: #fddcc4;
@@ -137,6 +138,7 @@
 .pets-slider__pagination:disabled {
   border: 2px solid #cdcdcd;
   pointer-events: none;
+  fill: #CDCDCD;
 }
 
 @media screen and (max-width: 1279px) {

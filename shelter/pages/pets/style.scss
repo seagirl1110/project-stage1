@@ -131,6 +131,7 @@
     &__pagination {
         @include btn(52px);
         @include btn-add();
+        fill: #292929;
 
         // pets-slider__pagination--page
 
@@ -144,6 +145,7 @@
         &:disabled {
             border: 2px solid $color-dark-s;
             pointer-events: none;
+            fill: #CDCDCD;
         }
     }
 }
