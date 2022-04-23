@@ -9,10 +9,9 @@ const activeBlock = carousel.querySelector('[data-slider="block-active"]');
 const rightBlock = carousel.querySelector('[data-slider="block-right"]');
 
 let activeColl;
-let leftColl;
-let rightColl;
+let sideColl;
 
-fillActiveBlock();
+createActiveColl();
 
 btnLeft.addEventListener('click', moveLeft);
 btnRight.addEventListener('click', moveRight);
@@ -32,21 +31,22 @@ function moveRight() {
 carousel.addEventListener("animationend", (animationEvent) => {
     if (animationEvent.animationName === "move-left") {
         carousel.classList.remove("transition-left");
-        activeBlock.innerHTML = leftBlock.innerHTML;
-        activeColl = leftColl;
-        fillSideBlock(activeColl);
+        // activeBlock.innerHTML = leftBlock.innerHTML;
     } else {
         carousel.classList.remove("transition-right");
-        activeBlock.innerHTML = rightBlock.innerHTML;
-        activeColl = rightColl;
-        fillSideBlock(activeColl);
+        // activeBlock.innerHTML = rightBlock.innerHTML;
     }
+
+    activeBlock.innerHTML = "";
+
+    activeColl = sideColl;
+    fillActiveBlock(activeColl);
 
     btnLeft.addEventListener('click', moveLeft);
     btnRight.addEventListener('click', moveRight);
 })
 
-function fillActiveBlock() {
+function createActiveColl() {
     activeColl = [];
     while (activeColl.length !== 3) {
         const item = pets[Math.floor(Math.random() * 8)];
@@ -54,6 +54,10 @@ function fillActiveBlock() {
             activeColl.push(item);
         }
     }
+    fillActiveBlock(activeColl);
+}
+
+function fillActiveBlock(activeColl) {
     for (let i = 0; i < 3; i += 1) {
         activeBlock.appendChild(renderCard(activeColl[i]));
     }
@@ -61,27 +65,19 @@ function fillActiveBlock() {
 }
 
 function fillSideBlock(activeColl) {
-    leftColl = [];
-    rightColl = [];
+    sideColl = [];
     leftBlock.innerHTML = "";
     rightBlock.innerHTML = "";
 
-    while (leftColl.length !== 3) {
+    while (sideColl.length !== 3) {
         const item = pets[Math.floor(Math.random() * 8)];
-        if (!activeColl.includes(item) && !leftColl.includes(item)) {
-            leftColl.push(item)
-        };
-    }
-
-    while (rightColl.length !== 3) {
-        const item = pets[Math.floor(Math.random() * 8)];
-        if (!activeColl.includes(item) && !rightColl.includes(item)) {
-            rightColl.push(item)
+        if (!activeColl.includes(item) && !sideColl.includes(item)) {
+            sideColl.push(item)
         };
     }
 
     for (let i = 0; i < 3; i += 1) {
-        leftBlock.appendChild(renderCard(leftColl[i]));
-        rightBlock.appendChild(renderCard(rightColl[i]));
+        leftBlock.appendChild(renderCard(sideColl[i]));
+        rightBlock.appendChild(renderCard(sideColl[i]));
     }
 }
