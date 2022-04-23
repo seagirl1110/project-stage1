@@ -150,7 +150,7 @@
     flex-wrap: nowrap;
 
     @media screen and (max-width: 1279px) {
-        gap: 12px;
+        gap: 8px;
         justify-content: center;
     }
     @media screen and (max-width: 767px) {
@@ -173,18 +173,24 @@
     // .pets-slider__wrapper
 
     &__wrapper {
-        width: 990px;
+        width: 1080px;
         overflow: hidden;
+
+        @media screen and (max-width: 1279px) {
+            width: 588px;
+        }
+
+        @media screen and (max-width: 767px) {
+            width: 300px;
+        }
     }
 
     // .pets-slider__inner
 
     &__inner {
         display: flex;
-        gap: 90px;
         position: relative;
-        left: -1080px;
-
+        left: -100%;
     }
 
     // .pets-slider__block
@@ -192,32 +198,47 @@
     &__block {
         display: flex;
         gap: 90px;
+        padding: 0 45px;
 
         @media screen and (max-width: 1279px) {
-            gap: 40px;
+            gap: 24px;
+            padding: 0 12px;
+        }
+
+        @media screen and (max-width: 767px) {
+            gap: 30px;
+            padding: 0 15px;
         }
     }
 }
 
 @keyframes move-right {
-    from {left: -1080px;}
-    to {left: -2160px;}
-  }
-  
-  .transition-right {
+    from {
+        left: -100%;
+    }
+    to {
+        left: -200%;
+    }
+}
+
+.transition-right {
     animation-name: move-right;
-    animation-duration: 5s;
-  }
-  
-  @keyframes move-left {
-    from {left: -1080px;}
-    to {left: 0px;}
-  }
-  
-  .transition-left {
+    animation-duration: 2s;
+}
+
+@keyframes move-left {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0%;
+    }
+}
+
+.transition-left {
     animation-name: move-left;
-    animation-duration: 5s;
-  }
+    animation-duration: 2s;
+}
 
 .pets-item:nth-child(3) {
     @media screen and (max-width: 1279px) {
