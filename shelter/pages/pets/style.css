@@ -139,6 +139,7 @@
   border: 2px solid #cdcdcd;
   pointer-events: none;
   fill: #CDCDCD;
+  background-color: transparent;
 }
 
 @media screen and (max-width: 1279px) {
