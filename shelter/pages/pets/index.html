@@ -25,9 +25,12 @@
                     <div class="logo__text">Shelter for pets in Boston</div>
                 </a>
                 <ul class="nav__menu menu">
-                    <li class="menu__item"><a href="../main/index.html" class="menu__link" data-js="menu-link">About the shelter</a></li>
-                    <li class="menu__item menu__item--active"><a href="#" class="menu__link" data-js="menu-link">Our pets</a></li>
-                    <li class="menu__item"><a href="../main/index.html#help" class="menu__link" data-js="menu-link">Help the shelter</a>
+                    <li class="menu__item"><a href="../main/index.html" class="menu__link" data-js="menu-link">About the
+                            shelter</a></li>
+                    <li class="menu__item menu__item--active"><a href="#" class="menu__link" data-js="menu-link">Our
+                            pets</a></li>
+                    <li class="menu__item"><a href="../main/index.html#help" class="menu__link" data-js="menu-link">Help
+                            the shelter</a>
                     </li>
                     <li class="menu__item"><a href="#footer" class="menu__link" data-js="menu-link">Contacts</a></li>
                 </ul>
@@ -46,11 +49,9 @@
                     <br>are looking for a house
                 </h1>
                 <div class="pets__slider pets-slider">
-                    <div class="pets-slider__wrapper">
-                       <div class="pets-slider__pages" data-js="pages"></div>
-                    </div>
+                    <div class="pets-slider__pages" data-pagination="page"></div>
                     <div class="pets-slider__pagination-btns">
-                        <button class="pets-slider__pagination" disabled>
+                        <button class="pets-slider__pagination" disabled data-pagination="btn-start">
                             <svg width="25" height="11" viewBox="0 0 25 11" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -58,7 +59,7 @@
                                     fill="#CDCDCD" />
                             </svg>
                         </button>
-                        <button class="pets-slider__pagination" disabled>
+                        <button class="pets-slider__pagination" disabled data-pagination="btn-prev">
                             <svg width="10" height="11" viewBox="0 0 10 11" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -66,8 +67,8 @@
                                     fill="#CDCDCD" />
                             </svg>
                         </button>
-                        <button class="pets-slider__pagination pets-slider__pagination--page">1</button>
-                        <button class="pets-slider__pagination">
+                        <button class="pets-slider__pagination pets-slider__pagination--page" data-pagination="page-number">1</button>
+                        <button class="pets-slider__pagination" data-pagination="btn-next">
                             <svg width="10" height="11" viewBox="0 0 10 11" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -75,7 +76,7 @@
                                     fill="#292929" />
                             </svg>
                         </button>
-                        <button class="pets-slider__pagination">
+                        <button class="pets-slider__pagination" data-pagination="btn-finish">
                             <svg width="25" height="11" viewBox="0 0 25 11" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
