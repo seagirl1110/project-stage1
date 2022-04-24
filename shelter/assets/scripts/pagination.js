@@ -16,13 +16,17 @@ if (window.innerWidth < 768) {
 }
 
 const coll = [];
+coll.push(...shuffle(pets));
+
+function shuffle(array) {
+    const result = [...array];
+    result.sort(() => Math.random() - 0.5);
+    return result;
+}
+
 while (coll.length < 48) {
     const item = pets[Math.floor(Math.random() * 8)];
-    if (coll.length < 8) {
-        if (!coll.includes(item)) {
-            coll.push(item)
-        }
-    } else if (coll.length < 12) {
+    if (coll.length < 12) {
         const arr = coll.slice(6);
         if (!arr.includes(item)) {
             coll.push(item)
