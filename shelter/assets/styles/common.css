@@ -625,6 +625,14 @@ body {
   background-color: transparent;
 }
 
+@keyframes scale {
+  from {
+    transform: scale(0.7);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 .pet {
   position: relative;
   background-color: #fafafa;
@@ -638,6 +646,8 @@ body {
   min-height: 500px;
   z-index: 100;
   cursor: auto;
+  animation-name: scale;
+  animation-duration: 0.3s;
 }
 @media screen and (max-width: 1279px) {
   .pet {
