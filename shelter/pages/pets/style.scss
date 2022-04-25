@@ -97,10 +97,12 @@
         margin: 41px 0 0;
     }
 
-    // .pets-slider__inner
+    // .pets-slider__pages
 
-    &__inner {
+    &__pages {
+        @include flex;
         gap: 30px 40px;
+        max-width: 100%;
 
         @media screen and (max-width: 1279px) {
             justify-content: center;
@@ -129,6 +131,7 @@
     &__pagination {
         @include btn(52px);
         @include btn-add();
+        fill: #292929;
 
         // pets-slider__pagination--page
 
@@ -142,6 +145,8 @@
         &:disabled {
             border: 2px solid $color-dark-s;
             pointer-events: none;
+            fill: #CDCDCD;
+            background-color: transparent;
         }
     }
 }

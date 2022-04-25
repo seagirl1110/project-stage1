@@ -25,11 +25,14 @@
                     <div class="logo__text">Shelter for pets in Boston</div>
                 </a>
                 <ul class="nav__menu menu">
-                    <li class="menu__item"><a href="../main/index.html" class="menu__link">About the shelter</a></li>
-                    <li class="menu__item menu__item--active"><a href="#" class="menu__link">Our pets</a></li>
-                    <li class="menu__item"><a href="../main/index.html#help" class="menu__link">Help the shelter</a>
+                    <li class="menu__item"><a href="../main/index.html" class="menu__link" data-js="menu-link">About the
+                            shelter</a></li>
+                    <li class="menu__item menu__item--active"><a href="#" class="menu__link" data-js="menu-link">Our
+                            pets</a></li>
+                    <li class="menu__item"><a href="../main/index.html#help" class="menu__link" data-js="menu-link">Help
+                            the shelter</a>
                     </li>
-                    <li class="menu__item"><a href="#footer" class="menu__link">Contacts</a></li>
+                    <li class="menu__item"><a href="#footer" class="menu__link" data-js="menu-link">Contacts</a></li>
                 </ul>
             </nav>
             <div class="header__burger burger" data-js="burger">
@@ -46,88 +49,31 @@
                     <br>are looking for a house
                 </h1>
                 <div class="pets__slider pets-slider">
-                    <div class="pets-slider__inner">
-                        <article class="pets-slider__item pets-item">
-                            <img src="../../assets/images/pets-katrine.jpg" alt="pets-Katrine" class="pets-item__img"
-                                width="270" height="270">
-                            <h4 class="pets-item__title">Katrine</h4>
-                            <button class="pets-item__btn">Learn more</button>
-                        </article>
-                        <article class="pets-slider__item pets-item">
-                            <img src="../../assets/images/pets-jennifer.jpg" alt="pets-Jennifer" class="pets-item__img"
-                                width="270" height="270">
-                            <h4 class="pets-item__title">Jennifer</h4>
-                            <button class="pets-item__btn">Learn more</button>
-                        </article>
-                        <article class="pets-slider__item pets-item">
-                            <img src="../../assets/images/pets-woody.jpg" alt="pets-Woody" class="pets-item__img"
-                                width="270" height="270">
-                            <h4 class="pets-item__title">Woody</h4>
-                            <button class="pets-item__btn">Learn more</button>
-                        </article>
-                        <article class="pets-slider__item pets-item">
-                            <img src="../../assets/images/pets-sophia.jpg" alt="pets-Sophia" class="pets-item__img"
-                                width="270" height="270">
-                            <h4 class="pets-item__title">Sophia</h4>
-                            <button class="pets-item__btn">Learn more</button>
-                        </article>
-                        <article class="pets-slider__item pets-item">
-                            <img src="../../assets/images/pets-timmy.jpg" alt="pets-Timmy" class="pets-item__img"
-                                width="270" height="270">
-                            <h4 class="pets-item__title">Timmy</h4>
-                            <button class="pets-item__btn">Learn more</button>
-                        </article>
-                        <article class="pets-slider__item pets-item">
-                            <img src="../../assets/images/pets-charly.jpg" alt="pets-Charly" class="pets-item__img"
-                                width="270" height="270">
-                            <h4 class="pets-item__title">Charly</h4>
-                            <button class="pets-item__btn">Learn more</button>
-                        </article>
-                        <article class="pets-slider__item pets-item">
-                            <img src="../../assets/images/pets-scarlett.jpg" alt="pets-Scarlett" class="pets-item__img"
-                                width="270" height="270">
-                            <h4 class="pets-item__title">Scarlett</h4>
-                            <button class="pets-item__btn">Learn more</button>
-                        </article>
-                        <article class="pets-slider__item pets-item">
-                            <img src="../../assets/images/pets-freddie.jpg" alt="pets-Freddie" class="pets-item__img"
-                                width="270" height="270">
-                            <h4 class="pets-item__title">Freddie</h4>
-                            <button class="pets-item__btn">Learn more</button>
-                        </article>
-                    </div>
+                    <div class="pets-slider__pages" data-pagination="page"></div>
                     <div class="pets-slider__pagination-btns">
-                        <button class="pets-slider__pagination" disabled>
-                            <svg width="25" height="11" viewBox="0 0 25 11" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+                        <button class="pets-slider__pagination" data-pagination="btn-start">
+                            <svg width="25" height="11" viewBox="0 0 25 11" xmlns="http://www.w3.org/2000/svg">
                                 <path
-                                    d="M9.94687 10.7852L0.913671 6.08789V4.98438L9.94687 0.287109V1.625L2.43711 5.53125L9.94687 9.44727V10.7852ZM24.018 10.7852L14.9848 6.08789V4.98438L24.018 0.287109V1.625L16.5082 5.53125L24.018 9.44727V10.7852Z"
-                                    fill="#CDCDCD" />
+                                    d="M9.94687 10.7852L0.913671 6.08789V4.98438L9.94687 0.287109V1.625L2.43711 5.53125L9.94687 9.44727V10.7852ZM24.018 10.7852L14.9848 6.08789V4.98438L24.018 0.287109V1.625L16.5082 5.53125L24.018 9.44727V10.7852Z"/>
                             </svg>
                         </button>
-                        <button class="pets-slider__pagination" disabled>
-                            <svg width="10" height="11" viewBox="0 0 10 11" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+                        <button class="pets-slider__pagination" data-pagination="btn-prev">
+                            <svg width="10" height="11" viewBox="0 0 10 11" xmlns="http://www.w3.org/2000/svg">
                                 <path
-                                    d="M9.98242 10.7852L0.949219 6.08789V4.98438L9.98242 0.287109V1.625L2.47266 5.53125L9.98242 9.44727V10.7852Z"
-                                    fill="#CDCDCD" />
+                                    d="M9.98242 10.7852L0.949219 6.08789V4.98438L9.98242 0.287109V1.625L2.47266 5.53125L9.98242 9.44727V10.7852Z"/>
                             </svg>
                         </button>
-                        <button class="pets-slider__pagination pets-slider__pagination--page">1</button>
-                        <button class="pets-slider__pagination">
-                            <svg width="10" height="11" viewBox="0 0 10 11" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+                        <button class="pets-slider__pagination pets-slider__pagination--page" data-pagination="page-number">1</button>
+                        <button class="pets-slider__pagination" data-pagination="btn-next">
+                            <svg width="10" height="11" viewBox="0 0 10 11" xmlns="http://www.w3.org/2000/svg">
                                 <path
-                                    d="M9.04102 6.08789L0.0078125 10.7852V9.44727L7.51758 5.53125L0.0078125 1.625V0.287109L9.04102 4.98438V6.08789Z"
-                                    fill="#292929" />
+                                    d="M9.04102 6.08789L0.0078125 10.7852V9.44727L7.51758 5.53125L0.0078125 1.625V0.287109L9.04102 4.98438V6.08789Z"/>
                             </svg>
                         </button>
-                        <button class="pets-slider__pagination">
-                            <svg width="25" height="11" viewBox="0 0 25 11" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+                        <button class="pets-slider__pagination" data-pagination="btn-finish">
+                            <svg width="25" height="11" viewBox="0 0 25 11" xmlns="http://www.w3.org/2000/svg">
                                 <path
-                                    d="M10.0055 6.08789L0.972265 10.7852V9.44727L8.48203 5.53125L0.972265 1.625V0.287109L10.0055 4.98438V6.08789ZM24.0766 6.08789L15.0434 10.7852V9.44727L22.5531 5.53125L15.0434 1.625V0.287109L24.0766 4.98438V6.08789Z"
-                                    fill="#292929" />
+                                    d="M10.0055 6.08789L0.972265 10.7852V9.44727L8.48203 5.53125L0.972265 1.625V0.287109L10.0055 4.98438V6.08789ZM24.0766 6.08789L15.0434 10.7852V9.44727L22.5531 5.53125L15.0434 1.625V0.287109L24.0766 4.98438V6.08789Z"/>
                             </svg>
                         </button>
                     </div>
@@ -153,7 +99,9 @@
             <img src="../../assets/images/footer-puppy.png" alt="puppy" class="footer__img" width="300" height="310">
         </div>
     </footer>
-    <script src="../../assets/scripts/app.js" type="module"></script>
+    <div class="popup" data-js="popup"></div>
+    <script src="../../assets/scripts/burger.js" type="module"></script>
+    <script src="../../assets/scripts/pagination.js" type="module"></script>
 </body>
 
 </html>

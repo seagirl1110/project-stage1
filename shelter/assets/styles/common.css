@@ -110,6 +110,10 @@ body {
   color: #cdcdcd;
 }
 
+.body--overflow {
+  overflow: hidden;
+}
+
 .header {
   width: 100%;
   background: url("../../assets/images/bg-noise-transparent.png"), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
@@ -184,6 +188,7 @@ body {
 .nav .logo {
   display: none;
   padding: 30px 0 0 10px;
+  max-width: 210px;
 }
 @media screen and (max-width: 767px) {
   .nav .logo {
@@ -200,7 +205,7 @@ body {
     position: fixed;
     top: 0;
     right: -100%;
-    transition: all 0.3s;
+    transition: all 0.5s;
     display: flex;
     flex-direction: column;
   }
@@ -224,7 +229,7 @@ body {
     font-size: 32px;
     line-height: 160%;
     margin: auto 0;
-    overflow-y: scroll;
+    overflow-y: auto;
   }
 }
 .menu__item {
@@ -255,7 +260,7 @@ body {
   position: absolute;
   left: 10px;
   right: 10px;
-  bottom: -2px;
+  bottom: 0;
   transition: all 0.3s;
   opacity: 0;
 }
@@ -274,7 +279,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   margin-right: 43px;
-  transition: all 0.3s;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 @media screen and (max-width: 767px) {
   .burger {
@@ -330,13 +336,6 @@ body {
 }
 .pets__slider {
   margin: 60px 0;
-}
-
-.pets-slider__inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
 .pets-item {
@@ -561,6 +560,223 @@ body {
     width: 260px;
     margin: 0 auto;
   }
+}
+
+.popup {
+  display: none;
+  background: rgba(41, 41, 41, 0.6);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  cursor: pointer;
+}
+.popup--open {
+  display: flex;
+}
+.popup__container {
+  position: relative;
+}
+.popup__btn {
+  width: 52px;
+  height: 52px;
+  background-color: #f1cdb3;
+  color: #292929;
+  font-family: "Georgia", "Century Schoolbook L", serif;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  border-radius: 100px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: background-color 0.3s;
+  border: 2px solid #f1cdb3;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(80%, -100%);
+}
+.popup__btn:hover {
+  background-color: #fddcc4;
+}
+.popup__btn:hover {
+  border: none;
+}
+@media screen and (max-width: 767px) {
+  .popup__btn {
+    transform: translate(58%, -100%);
+  }
+}
+.popup:hover .popup__btn {
+  background-color: #fddcc4;
+  border: none;
+}
+.popup__pet:hover + .popup__btn {
+  border: 2px solid #f1cdb3;
+  background-color: transparent;
+}
+
+.pet {
+  position: relative;
+  background-color: #fafafa;
+  border-radius: 9px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 900px;
+  min-height: 500px;
+  z-index: 100;
+  cursor: auto;
+}
+@media screen and (max-width: 1279px) {
+  .pet {
+    width: 630px;
+    min-height: 350px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pet {
+    width: 240px;
+    min-height: 341px;
+  }
+}
+.pet:hover {
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+}
+.pet__img {
+  border-radius: 9px 0 0 9px;
+}
+@media screen and (max-width: 1279px) {
+  .pet__img {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pet__img {
+    display: none;
+  }
+}
+.pet__content {
+  width: 351px;
+  margin: 50px 20px 0 29px;
+  font-family: "Georgia", "Century Schoolbook L", serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+@media screen and (max-width: 1279px) {
+  .pet__content {
+    width: 260px;
+    margin: 10px 7px 0 9px;
+  }
+}
+.pet__name {
+  font-size: 35px;
+  line-height: 130%;
+  margin: 0 0 10px;
+  font-weight: normal;
+  letter-spacing: 0.06em;
+}
+@media screen and (max-width: 767px) {
+  .pet__name {
+    text-align: center;
+  }
+}
+.pet__type-wrapper {
+  font-size: 20px;
+  line-height: 115%;
+  font-weight: normal;
+  letter-spacing: 0.06em;
+  margin: 0;
+}
+@media screen and (max-width: 767px) {
+  .pet__type-wrapper {
+    text-align: center;
+  }
+}
+.pet__description {
+  font-size: 15px;
+  line-height: 113%;
+  margin: 40px 0;
+}
+@media screen and (max-width: 1279px) {
+  .pet__description {
+    font-size: 13px;
+    line-height: 111%;
+    margin: 20px 0 17px;
+    letter-spacing: 0.05em;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  .pet__description {
+    text-align: justify;
+    margin: 20px 5px 17px 0;
+    margin: 20px 0 23px;
+  }
+}
+.pet__characteristics {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 2px;
+}
+
+.pet-item {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 110%;
+  list-style: none;
+  padding-left: 15px;
+  position: relative;
+  margin-top: 12px;
+}
+@media screen and (max-width: 1279px) {
+  .pet-item {
+    margin-top: 7px;
+    padding-left: 12px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pet-item {
+    margin-top: 6px;
+    padding-left: 16px;
+  }
+}
+.pet-item::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 100px;
+  background-color: #f1cdb3;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+@media screen and (max-width: 1279px) {
+  .pet-item::before {
+    left: -2px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pet-item::before {
+    left: 2px;
+  }
+}
+.pet-item__value {
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=common.css.map */
