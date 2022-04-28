@@ -1,2 +1,1 @@
-# seagirl1110-JSFE2022Q1
-Private repository for @seagirl1110
+https://seagirl1110.github.io/project-stage1/shelter/pages/main/index.html
