@@ -1,4 +1,4 @@
-[
+export default [
     {
       "name": "Jennifer",
       "img": "../../assets/images/pets-jennifer.jpg",

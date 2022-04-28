@@ -1,4 +1,4 @@
-import pets from './pets.json' assert { type: 'json' };
+import pets from './pets.js';
 import { renderCard } from './card.js';
 
 let countCards = 3;
