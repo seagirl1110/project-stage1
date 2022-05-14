@@ -1,6 +1,6 @@
 Мой учебный проект "Shelter". 
 
-Cотсоит из двух страниц: 
+Cостоит из двух страниц: 
 - главная - https://seagirl1110.github.io/project-stage1/shelter/pages/main/index.html 
 - страница с животными - https://seagirl1110.github.io/project-stage1/shelter/pages/pets/index.html
 
