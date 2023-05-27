@@ -1,8 +1,8 @@
 Мой учебный проект "Shelter". 
 
 Cостоит из двух страниц: 
-- главная - https://seagirl1110.github.io/shelter/shelter/pages/main/index.html 
-- страница с животными - https://seagirl1110.github.io/shelter/shelter/pages/pets/index.html
+- главная - https://seagirl1110.github.io/project-stage1/shelter/pages/main/index.html 
+- страница с животными - https://seagirl1110.github.io/project-stage1/shelter/pages/pets/index.html
 
 Реализован по макету из Figma: https://www.figma.com/file/tKcmzkARtMUFQAR9VLdLkl/shelter-dom?node-id=94%3A43
 * Адаптивная верстка - три контрольные точки: desktop, tablet, mobile.
